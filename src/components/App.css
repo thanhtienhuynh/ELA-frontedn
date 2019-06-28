@@ -1,0 +1,13 @@
+.boundary {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+.belowMenuBar {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(101, 146, 197);
+    /* //background-color: rgb(55, 59, 55); */
+    
+}
