@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './components/App';
+import Admin from './AdminView/App.js';
+import Guest from './GuestView/App.js'
 
 ReactDOM.render(
-    <App />,
+    <Admin />,
     document.querySelector('#root')
 );

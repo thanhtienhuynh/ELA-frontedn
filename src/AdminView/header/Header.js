@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
-import { Input, Menu } from 'semantic-ui-react'
-import './Header.css';
+import { Menu } from 'semantic-ui-react'
+
+
+const styleHeader={'backgroundColor':'rgb(101, 146, 197)', 'height':'5em', 'paddingRight':'10em'};
+const styleButton={'marginLeft':'5em','marginTop': '1em', 'fontWeight':'900'};
 
 export default class MenuHeader extends Component {
     state = { activeItem: 'home' }
@@ -9,16 +12,17 @@ export default class MenuHeader extends Component {
 
     render() {
         const { activeItem } = this.state
-
         return (
-            <div className='border'>
+            <div style={styleHeader}>
                 <Menu secondary>
-                    <p style={{fontSize:'2em', fontFamily: 'Courier New', marginTop: '20px'}}>Easy Learning System</p>
+                    <p >Logo</p>
                     <Menu.Menu position='right'>
-                        <Menu.Item>
-                            <Input icon='search' placeholder='Search...' />
-                        </Menu.Item>
-                        <Menu.Item
+                        <Menu.Item style={styleButton}
+                            name='home'
+                            active={activeItem === 'home'}
+                            onClick={this.handleItemClick}
+                        />
+                        <Menu.Item style={styleButton}
                             name='logout'
                             active={activeItem === 'logout'}
                             onClick={this.handleItemClick}

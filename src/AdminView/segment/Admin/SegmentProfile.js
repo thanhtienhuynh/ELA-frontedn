@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Segment } from 'semantic-ui-react'
-import ProfileForm from '../profileform/ProfileForm'
-import Avatar from '../avatar/Avatar'
+import ProfileForm from '../../profileform/ProfileForm'
+import Avatar from '../../avatar/Avatar'
 
 export default class SegmentProfile extends Component {
     render() {
@@ -10,6 +10,7 @@ export default class SegmentProfile extends Component {
                 <Avatar />
                 <ProfileForm />
           </Segment>
+          
         )
     }
 }
