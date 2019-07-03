@@ -9,7 +9,9 @@ import SegmentClass from './segment/SegmentClass';
 import SegmentDashboard from './segment/SegmentDashboard';
 import SegmentStudent from './segment/SegmentStudent';
 import { BrowserRouter, Route } from 'react-router-dom'
-import SegmentNews from './segment/News/SegmentNews'
+import SegmentCreateNews from './segment/News/SegmentCreateNews'
+import SegmentViewNews from './segment/News/SegmentViewNews'
+import SegmentUpdateNews from './segment/News/SegmentUpdateNews'
 
 const App = () => {
     return (
@@ -24,9 +26,9 @@ const App = () => {
                         <Grid.Column stretched width={13}>
                             <Route path="/" exact component={SegmentDashboard} />
                             <Route path="/admin/profile" exact component={SegmentProfile} />
-                            <Route path="/admin/news/create" exact component={SegmentNews} />
-                            <Route path="/admin/news/update" exact component={SegmentNews} />
-                            <Route path="/admin/news/view" exact component={SegmentNews} />
+                            <Route path="/admin/news/create" exact component={SegmentCreateNews} />
+                            <Route path="/admin/news/update" exact component={SegmentUpdateNews} />
+                            <Route path="/admin/news/view" exact component={SegmentViewNews} />
                         </Grid.Column>
                     </Grid>
                 </BrowserRouter>

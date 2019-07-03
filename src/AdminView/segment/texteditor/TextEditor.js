@@ -3,9 +3,11 @@ import CKEditor from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 class TextEditor extends Component {
+  
   render() {
     return (
-      <div style={{'height':'25em'}}>
+      <div >
+        
         <CKEditor
           editor={ClassicEditor}
           data=""
@@ -30,5 +32,6 @@ class TextEditor extends Component {
     );
   }
 }
+
 
 export default TextEditor;

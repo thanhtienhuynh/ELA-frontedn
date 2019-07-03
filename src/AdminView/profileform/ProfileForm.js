@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Button, Checkbox, Form, Input, Radio, TextArea } from 'semantic-ui-react'
 
+const styleForm = {'width':'40em','height':'3.5em'};
+
 class FormExampleFieldControl extends Component {
   state = {}
 
@@ -11,8 +13,8 @@ class FormExampleFieldControl extends Component {
     return (
       <Form>
 
-        <Form.Field control={Input} label='First name' placeholder='First name' />
-        <Form.Field control={Input} label='Last name' placeholder='Last name' />
+        <Form.Field control={Input} label='First name' placeholder='First name' style={styleForm}/>
+        <Form.Field control={Input} label='Last name' placeholder='Last name' style={styleForm}/>
 
         <Form.Group inline>
           <label>Gender</label>

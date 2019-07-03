@@ -2,10 +2,10 @@ import React from 'react';
 import { Menu, Dropdown } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 
-const styleItem = { 'lineHeight': '3em', 'fontSize': '18px' }
+const styleItem = { 'lineHeight': '3em', 'fontSize': '17px' }
 const styleItemAdmin = { 'lineHeight': '3em', 'color': 'rgb(35, 231, 17)' }
 const styleNavigationBar = { 'color': 'white', 'backgroundColor': 'rgb(55, 59, 55)', 'textAlign': 'center' };
-const styleMenuBar = { 'width': '25em', 'height': '58em', 'borderRadius': 0 };
+const styleMenuBar = { 'width': '25em', 'height': '62em', 'borderRadius': 0 };
 
 export default class MenuBar extends React.Component {
     state = { activeItem: 'dashboard' }
@@ -76,9 +76,17 @@ export default class MenuBar extends React.Component {
 
                 <Dropdown style={styleItem} item text='News'  >
                     <Dropdown.Menu>
-                        <Dropdown.Item icon='edit' text='View' as={Link} to="/admin/news/view"/>
-                        <Dropdown.Item icon='globe' text='Update' as={Link} to="/admin/news/update"/>
-                        <Dropdown.Item icon='settings' text='Create' as={Link} to="/admin/news/create"/>
+                        <Dropdown.Item icon='edit' text='View' as={Link} to="/admin/news/view" />
+                        <Dropdown.Item icon='globe' text='Update' as={Link} to="/admin/news/update" />
+                        <Dropdown.Item icon='settings' text='Create' as={Link} to="/admin/news/create" />
+                    </Dropdown.Menu>
+                </Dropdown>
+
+                <Dropdown style={styleItem} item text='Account' >
+                    <Dropdown.Menu>
+                        <Dropdown.Item icon='edit' text='View' />
+                        <Dropdown.Item icon='globe' text='Update' />
+                        <Dropdown.Item icon='settings' text='Create' />
                     </Dropdown.Menu>
                 </Dropdown>
 
