@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Image, Item, Segment } from 'semantic-ui-react'
+import { Button, Item, Segment } from 'semantic-ui-react'
 
 const paragraph = <p>Description</p>
 const styleViewButton={'marginRight':'4em'};
@@ -14,7 +14,7 @@ const SegmentViewNews = () => (
                     <Item.Header>Title A</Item.Header>
                     <Item.Description>{paragraph}</Item.Description>
                     <Item.Extra>
-                        <Button style={styleViewButton} floated='right'>View</Button>
+                        <Button positive style={styleViewButton} floated='right'>View</Button>
                     </Item.Extra>
                 </Item.Content>
             </Item>
@@ -26,7 +26,7 @@ const SegmentViewNews = () => (
                     <Item.Header>Title B</Item.Header>
                     <Item.Description>{paragraph}</Item.Description>
                     <Item.Extra>
-                        <Button style={styleViewButton} floated='right'>View</Button>
+                        <Button positive style={styleViewButton} floated='right'>View</Button>
                     </Item.Extra>
                 </Item.Content>
             </Item>
@@ -38,7 +38,7 @@ const SegmentViewNews = () => (
                     <Item.Header>Title C</Item.Header>
                     <Item.Description>{paragraph}</Item.Description>
                     <Item.Extra>
-                        <Button style={styleViewButton} floated='right'>View</Button>
+                        <Button positive style={styleViewButton} floated='right'>View</Button>
                     </Item.Extra>
                 </Item.Content>
             </Item>
@@ -49,7 +49,7 @@ const SegmentViewNews = () => (
                     <Item.Header>Title C</Item.Header>
                     <Item.Description>{paragraph}</Item.Description>
                     <Item.Extra >
-                        <Button style={styleViewButton} floated='right'>View</Button>
+                        <Button positive style={styleViewButton} floated='right'>View</Button>
                     </Item.Extra>
                 </Item.Content>
             </Item>

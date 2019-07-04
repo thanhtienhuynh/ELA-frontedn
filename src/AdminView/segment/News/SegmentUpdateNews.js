@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Image, Item, Segment } from 'semantic-ui-react'
+import { Button, Item, Segment } from 'semantic-ui-react'
 
 const paragraph = <p>Description</p>
 const styleDeleteButton = { 'marginRight': '4em', 'marginLeft': '2em' };
@@ -14,8 +14,8 @@ const SegmentUpdateNews = () => (
                     <Item.Header>Title A</Item.Header>
                     <Item.Description>{paragraph}</Item.Description>
                     <Item.Extra>
-                        <Button style={styleDeleteButton} floated='right'>Delete</Button>
-                        <Button floated='right'>Edit</Button>
+                        <Button negative style={styleDeleteButton} floated='right'>Delete</Button>
+                        <Button positive floated='right'>Edit</Button>
                     </Item.Extra>
                 </Item.Content>
             </Item>
@@ -27,8 +27,8 @@ const SegmentUpdateNews = () => (
                     <Item.Header>Title B</Item.Header>
                     <Item.Description>{paragraph}</Item.Description>
                     <Item.Extra>
-                        <Button style={styleDeleteButton} floated='right'>Delete</Button>
-                        <Button floated='right'>Edit</Button>
+                        <Button negative style={styleDeleteButton} floated='right'>Delete</Button>
+                        <Button positive floated='right'>Edit</Button>
                     </Item.Extra>
                 </Item.Content>
             </Item>
@@ -40,8 +40,8 @@ const SegmentUpdateNews = () => (
                     <Item.Header>Title C</Item.Header>
                     <Item.Description>{paragraph}</Item.Description>
                     <Item.Extra>
-                        <Button style={styleDeleteButton} floated='right'>Delete</Button>
-                        <Button floated='right'>Edit</Button>
+                        <Button negative style={styleDeleteButton} floated='right'>Delete</Button>
+                        <Button positive floated='right'>Edit</Button>
                     </Item.Extra>
                 </Item.Content>
             </Item>
@@ -52,8 +52,8 @@ const SegmentUpdateNews = () => (
                     <Item.Header>Title C</Item.Header>
                     <Item.Description>{paragraph}</Item.Description>
                     <Item.Extra >
-                        <Button style={styleDeleteButton} floated='right'>Delete</Button>
-                        <Button floated='right'>Edit</Button>   
+                        <Button negative style={styleDeleteButton} floated='right'>Delete</Button>
+                        <Button positive floated='right'>Edit</Button>   
                     </Item.Extra>
                 </Item.Content>
             </Item>

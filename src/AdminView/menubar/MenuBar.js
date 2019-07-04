@@ -84,13 +84,11 @@ export default class MenuBar extends React.Component {
 
                 <Dropdown style={styleItem} item text='Account' >
                     <Dropdown.Menu>
-                        <Dropdown.Item icon='edit' text='View' />
-                        <Dropdown.Item icon='globe' text='Update' />
-                        <Dropdown.Item icon='settings' text='Create' />
+                        <Dropdown.Item icon='edit' text='View' as={Link} to="/admin/account/view" />
+                        <Dropdown.Item icon='globe' text='Update' as={Link} to="/admin/account/update" />
+                        <Dropdown.Item icon='settings' text='Create' as={Link} to="/admin/account/create" />
                     </Dropdown.Menu>
                 </Dropdown>
-
-
             </Menu>
         )
     }

@@ -12,6 +12,9 @@ import { BrowserRouter, Route } from 'react-router-dom'
 import SegmentCreateNews from './segment/News/SegmentCreateNews'
 import SegmentViewNews from './segment/News/SegmentViewNews'
 import SegmentUpdateNews from './segment/News/SegmentUpdateNews'
+import SegmentCreateAccount from './segment/Account/SegmentCreateAccount'
+import SegmentViewAccount from './segment/Account/SegmentViewAccount'
+import SegmentUpdateAccount from './segment/Account/SegmentUpdateAccount'
 
 const App = () => {
     return (
@@ -29,6 +32,9 @@ const App = () => {
                             <Route path="/admin/news/create" exact component={SegmentCreateNews} />
                             <Route path="/admin/news/update" exact component={SegmentUpdateNews} />
                             <Route path="/admin/news/view" exact component={SegmentViewNews} />
+                            <Route path="/admin/account/create" exact component={SegmentCreateAccount} />
+                            <Route path="/admin/account/view" exact component={SegmentViewAccount} />
+                            <Route path="/admin/account/update" exact component={SegmentUpdateAccount} />
                         </Grid.Column>
                     </Grid>
                 </BrowserRouter>
