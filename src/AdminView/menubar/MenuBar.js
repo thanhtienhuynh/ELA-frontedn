@@ -8,7 +8,7 @@ const styleNavigationBar = { 'color': 'white', 'backgroundColor': 'rgb(55, 59, 5
 const styleMenuBar = { 'width': '25em', 'height': '62em', 'borderRadius': 0 };
 
 export default class MenuBar extends React.Component {
-    state = { activeItem: 'dashboard' }
+    state = { activeItem: 'admin' }
 
     handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
@@ -17,14 +17,14 @@ export default class MenuBar extends React.Component {
 
         return (
             <Menu inverted vertical style={styleMenuBar} >
-                <Menu.Item style={styleItemAdmin} as={Link} to="/admin/profile"
+                <Menu.Item style={styleItemAdmin} as={Link} to="/admin"
                     name='admin'
                     active={activeItem === 'admin'}
                     onClick={this.handleItemClick}
                 />
 
                 <Menu.Item style={styleNavigationBar}>MAIN NAVIGATION</Menu.Item>
-                <Menu.Item style={styleItem} icon='dashboard' as={Link} to="/"
+                <Menu.Item style={styleItem} icon='dashboard' as={Link} to="/admin/dashboard"
                     name='dashboard'
                     active={activeItem === 'dashboard'}
                     onClick={this.handleItemClick}

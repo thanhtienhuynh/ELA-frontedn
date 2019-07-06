@@ -19,16 +19,17 @@ import SegmentUpdateAccount from './segment/Account/SegmentUpdateAccount'
 const App = () => {
     return (
         <div>
-            <Header />
+
             <div>
                 <BrowserRouter>
+                    <Route path="/admin" component={Header} />
                     <Grid>
                         <Grid.Column stretched width={3}>
-                            <MenuBar />
+                            <Route path="/admin" component={MenuBar} />
                         </Grid.Column>
                         <Grid.Column stretched width={13}>
-                            <Route path="/" exact component={SegmentDashboard} />
-                            <Route path="/admin/profile" exact component={SegmentProfile} />
+                            <Route path="/admin/dashboard" exact component={SegmentDashboard} />
+                            <Route path="/admin" exact component={SegmentProfile} />
                             <Route path="/admin/news/create" exact component={SegmentCreateNews} />
                             <Route path="/admin/news/update" exact component={SegmentUpdateNews} />
                             <Route path="/admin/news/view" exact component={SegmentViewNews} />

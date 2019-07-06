@@ -9,8 +9,7 @@ export default class SegmentProfile extends Component {
             <Segment>
                 <Avatar />
                 <ProfileForm />
-          </Segment>
-          
+            </Segment>
         )
     }
 }
