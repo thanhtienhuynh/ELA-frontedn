@@ -19,7 +19,7 @@
     "react-richtext": "^1.1.0",
     "react-router-dom": "^5.0.1",
     "react-rte": "^0.16.1",
-    "react-scripts": "3.0.1",
+    "react-scripts": "^3.0.1",
     "semantic-ui-react": "^0.87.2"
   },
   "scripts": {

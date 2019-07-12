@@ -1,32 +1,40 @@
 import React, { Component } from 'react'
-import { Menu } from 'semantic-ui-react'
+import { Menu, Dropdown, Input } from 'semantic-ui-react'
+import { Link } from 'react-router-dom';
 
 
-const styleHeader={'backgroundColor':'rgb(101, 146, 197)', 'height':'5em', 'paddingRight':'10em'};
-const styleButton={'marginLeft':'5em','marginTop': '1em', 'fontWeight':'900'};
-
-export default class MenuHeader extends Component {
-    state = { activeItem: 'home' }
-
+const styleHeader={'backgroundColor':'rgb(20, 20, 20)', 'height':'5em', 'paddingRight':'2em'};
+const styleItem={'marginLeft':'5em','marginTop': '0em', 'fontWeight':'900', 'color' : 'white'};
+const styleLogo={'color': 'white', 'marginTop': '0.5em', 'fontWeight':'900', 'fontSize': '1.5em', 'fontFamily': 'cursive', 'marginLeft': '1em'}
+export default class MenuHeader extends Component {    
+    state={activeItem: ''};
     handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
     render() {
-        const { activeItem } = this.state
+        const {activeItem} = this.state;
         return (
             <div style={styleHeader}>
-                <Menu secondary>
-                    <p >Logo</p>
+                <Menu inverted secondary>
+                    <Menu.Item
+                        style={styleLogo} 
+                        as={Link} to="/"
+                        icon='audible'
+                        name='Udemy'
+                        active={activeItem === 'udemy'}
+                        onClick={this.handleItemClick}
+                    />
                     <Menu.Menu position='right'>
-                        <Menu.Item style={styleButton}
-                            name='home'
-                            active={activeItem === 'home'}
-                            onClick={this.handleItemClick}
-                        />
-                        <Menu.Item style={styleButton}
-                            name='logout'
-                            active={activeItem === 'logout'}
-                            onClick={this.handleItemClick}
-                        />
+                        <Menu.Item>
+                            <Input icon='search' className='search' placeholder='Search course...' />
+                        </Menu.Item>
+                        <Dropdown style={styleItem} simple item icon='triangle down' >
+                            <Dropdown.Menu>
+                                <Dropdown.Item icon='home' text='Home' as={Link} to="/?"/>
+                                <Dropdown.Item icon='setting' text='Setting' />
+                                <Dropdown.Divider />
+                                <Dropdown.Item icon='log out' text='Log out' />
+                            </Dropdown.Menu>
+                        </Dropdown>
                     </Menu.Menu>
                 </Menu>
             </div>
