@@ -49,11 +49,12 @@ class SegmentCreateAccount extends Component {
                         <Form.Field control={Input} label='Address' placeholder='Address' style={styleForm} />
                     </Form.Group>
 
+                    <Form.Field control={Input} label='User Name' placeholder='User Name' style={styleForm} />
 
-                    <Form.Group widths='equal'>
-                        <Form.Field control={Input} label='User Name' placeholder='User Name' style={styleForm} />
-                        <Form.Field control={Input} label='Password' placeholder='Password' style={styleForm} />
-                    </Form.Group>
+
+                    <Form.Field control={Input} label='Password' placeholder='Password' style={styleForm} />
+                    <Form.Field control={Input} label='Confirm Password' placeholder='Confirm Password' style={styleForm} />
+
                     <Form.Group inline>
                         <label>Role</label>
                         <Form.Field
@@ -78,24 +79,6 @@ class SegmentCreateAccount extends Component {
                             onChange={this.handleChange}
                         />
                     </Form.Group>
-                    <Form.Group inline>
-                        <label>Status</label>
-                        <Form.Field
-                            control={Radio}
-                            label='Active'
-                            value='active'
-                            checked={value === 'active'}
-                            onChange={this.handleChange}
-                        />
-                        <Form.Field
-                            control={Radio}
-                            label='Block'
-                            value='block'
-                            checked={value === 'block'}
-                            onChange={this.handleChange}
-                        />
-                    </Form.Group>
-                    <Form.Field control={Checkbox} label='I agree to the Terms and Conditions' />
                     <Form.Field positive control={Button}>Create</Form.Field>
                 </Form>
             </Segment>

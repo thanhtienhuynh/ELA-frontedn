@@ -1,8 +1,14 @@
 import React from 'react'
-import { Table, Segment } from 'semantic-ui-react'
+import { Table, Segment, Input, Form } from 'semantic-ui-react'
+import Pagination from '../../../CommonComponent/Pagination'
+import SortBar from '../../../CommonComponent/SortBar'
 
 const SegmentViewAccount = () => (
     <Segment>
+
+        <Input icon='users' iconPosition='left' placeholder='Search users...' />
+        <SortBar style={{ 'marginRight': '2em' }}></SortBar>
+
         <Table columns={7}>
             <Table.Header>
                 <Table.Row>
@@ -58,6 +64,9 @@ const SegmentViewAccount = () => (
                 </Table.Row>
             </Table.Footer>
         </Table>
+        <div style={{ 'marginTop': '41em', 'textAlign': 'center' }}>
+            <Pagination ></Pagination>
+        </div>
     </Segment>
 )
 

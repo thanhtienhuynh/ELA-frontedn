@@ -1,8 +1,9 @@
 import React from 'react'
 import { Button, Item, Segment } from 'semantic-ui-react'
+import Pagination from '../../../CommonComponent/Pagination'
 
 const paragraph = <p>Description</p>
-const styleViewButton={'marginRight':'4em'};
+const styleViewButton = { 'marginRight': '4em' };
 
 const SegmentViewNews = () => (
     <Segment>
@@ -55,6 +56,9 @@ const SegmentViewNews = () => (
             </Item>
 
         </Item.Group>
+        <div style={{ 'marginTop': '8em', 'textAlign': 'center' }}>
+            <Pagination ></Pagination>
+        </div>
     </Segment>
 )
 

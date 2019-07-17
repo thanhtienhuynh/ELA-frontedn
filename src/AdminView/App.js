@@ -1,20 +1,19 @@
 import React from 'react';
-import MenuBar from './menubar/MenuBar';
+import MenuBar from './menubar/MenuBar1';
 import Header from './header/Header';
 import { Grid } from 'semantic-ui-react';
-import SegmentArea from './segment/Segment'
 import SegmentProfile from './segment/Admin/SegmentProfile';
-import SegmentAttendance from './segment/SegmentAttendance';
-import SegmentClass from './segment/SegmentClass';
 import SegmentDashboard from './segment/SegmentDashboard';
-import SegmentStudent from './segment/SegmentStudent';
 import { BrowserRouter, Route } from 'react-router-dom'
 import SegmentCreateNews from './segment/News/SegmentCreateNews'
 import SegmentViewNews from './segment/News/SegmentViewNews'
 import SegmentUpdateNews from './segment/News/SegmentUpdateNews'
 import SegmentCreateAccount from './segment/Account/SegmentCreateAccount'
 import SegmentViewAccount from './segment/Account/SegmentViewAccount'
-import SegmentUpdateAccount from './segment/Account/SegmentUpdateAccount'
+import SegmentCreateClass from './segment/Class/SegmentCreateClass'
+import SegmentViewClass from './segment/Class/SegmentViewClass';
+import SegmentUpdateClass from './segment/Class/SegmentUpdateAccount';
+import SegmentCreateExam from './segment/Exam/SegmentCreateExam';
 
 const App = () => {
     return (
@@ -35,7 +34,10 @@ const App = () => {
                             <Route path="/admin/news/view" exact component={SegmentViewNews} />
                             <Route path="/admin/account/create" exact component={SegmentCreateAccount} />
                             <Route path="/admin/account/view" exact component={SegmentViewAccount} />
-                            <Route path="/admin/account/update" exact component={SegmentUpdateAccount} />
+                            <Route path="/admin/class/create" exact component={SegmentCreateClass} />
+                            <Route path="/admin/class/view" exact component={SegmentViewClass} />
+                            <Route path="/admin/class/update" exact component={SegmentUpdateClass} />
+                            <Route path="/admin/exam/create" exact component={SegmentCreateExam} />
                         </Grid.Column>
                     </Grid>
                 </BrowserRouter>
