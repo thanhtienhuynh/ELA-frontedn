@@ -2,14 +2,12 @@ import React from 'react'
 import { Table, Segment } from 'semantic-ui-react'
 import Pagination from '../../../CommonComponent/Pagination'
 
-const a =   (null == undefined) ? "c":"d";
-
 const SegmentViewClass = () => (
     <Segment>
         <Table columns={9}>
             <Table.Header>
                 <Table.Row>
-                    <Table.HeaderCell>{a}</Table.HeaderCell>
+                    <Table.HeaderCell>Class</Table.HeaderCell>
                     <Table.HeaderCell>Course</Table.HeaderCell>
                     <Table.HeaderCell>Started Date</Table.HeaderCell>
                     <Table.HeaderCell>Finished Date</Table.HeaderCell>

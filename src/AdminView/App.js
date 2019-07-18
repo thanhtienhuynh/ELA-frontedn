@@ -14,6 +14,8 @@ import SegmentCreateClass from './segment/Class/SegmentCreateClass'
 import SegmentViewClass from './segment/Class/SegmentViewClass';
 import SegmentUpdateClass from './segment/Class/SegmentUpdateAccount';
 import SegmentCreateExam from './segment/Exam/SegmentCreateExam';
+import SegmentViewExam from './segment/Exam/SegmentViewExam';
+import SegmentUpdateExams from './segment/Exam/SegmentUpdateExam';
 
 const App = () => {
     return (
@@ -38,6 +40,8 @@ const App = () => {
                             <Route path="/admin/class/view" exact component={SegmentViewClass} />
                             <Route path="/admin/class/update" exact component={SegmentUpdateClass} />
                             <Route path="/admin/exam/create" exact component={SegmentCreateExam} />
+                            <Route path="/admin/exam/view" exact component={SegmentViewExam} />
+                            <Route path="/admin/exam/update" exact component={SegmentUpdateExams} />
                         </Grid.Column>
                     </Grid>
                 </BrowserRouter>

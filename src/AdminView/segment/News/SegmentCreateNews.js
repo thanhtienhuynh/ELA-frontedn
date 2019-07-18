@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Segment, Form, Input } from 'semantic-ui-react'
 import TextEditor from '../texteditor/TextEditor'
-import ButtonCreat from '../News/ButtonYN'
+import ButtonCreat from '../../../CommonComponent/ButtonYN'
 
 const styleForm = { 'height': '3.5em', 'marginBottom': '2em'};
 const styleSegment = {'paddingTop':'2em'};
@@ -16,7 +16,7 @@ export default class SegmentCreateNews extends Component {
                 </Form>
                 <label style={{ 'fontWeight': '700' }}>Content</label>
                 <TextEditor ></TextEditor>
-                <ButtonCreat ></ButtonCreat>
+                <ButtonCreat name='Create' header='Reminder!' content='Are you sure that you want to create this article?' isPositive='true'></ButtonCreat>
             </Segment>
         )
     }

@@ -46,7 +46,7 @@ class SegmentCreateExam extends Component {
                         <Form.Field label='SE1319' control='input' type='checkbox' />
                     </Form.Group>
 
-                    <Form.Button>Create</Form.Button>
+                    <Form.Button positive>Create</Form.Button>
                 </Form>
             </Segment>
         )
