@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 import { Menu, Dropdown, Input } from 'semantic-ui-react'
 import { Link } from 'react-router-dom';
 
-
 const styleHeader={'backgroundColor':'rgb(20, 20, 20)', 'height':'5em', 'paddingRight':'2em'};
 const styleItem={'marginLeft':'5em','marginTop': '0em', 'fontWeight':'900', 'color' : 'white'};
 const styleLogo={'color': 'white', 'marginTop': '0.5em', 'fontWeight':'900', 'fontSize': '1.5em', 'fontFamily': 'cursive', 'marginLeft': '1em'}
+
 export default class MenuHeader extends Component {    
     state={activeItem: ''};
     handleItemClick = (e, { name }) => this.setState({ activeItem: name })
