@@ -1,7 +1,7 @@
 import React from 'react';
 import {Header, Grid, Button} from 'semantic-ui-react';
 import LectureDetail from './lecturedetail/LectureDetail'
-import DimmerImg from './dimmerimg/DimmerImg';
+import DimmerImg from './dimmerlectureimage/DimmerLectureImage';
 const styleCourse = {'marginTop': '1em', 'marginLeft' : '1em', 'marginRight': '1em'}
 const Lecture = () => {
     return (

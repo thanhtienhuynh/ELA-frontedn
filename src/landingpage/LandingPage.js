@@ -1,8 +1,8 @@
 import React from 'react';
 import Head from './header/Header'
-import Content from './content/Content'
-import MainContent from './maincontent/MainContent'
-import StepUse from '../GuestView/stepuse/StepUse';
+import ContainerIntroduction from './containerintroduction/ContainerIntroduction'
+import ContainerContent from './landingpage_content/LandingpageContent'
+import AboveFooter from '../GuestView/abovefooter/AboveFooter'
 import Footer from '../GuestView/footer/Footer';
 import News from '../GuestView/news/News';
 import {Header, Grid, Segment} from 'semantic-ui-react';
@@ -11,8 +11,8 @@ const LandingPage = () => {
     return (
         <div>
             <Head></Head>
-            <Content></Content>
-            <MainContent></MainContent>
+            <ContainerIntroduction></ContainerIntroduction>
+            <ContainerContent></ContainerContent>
             <Grid columns="equal">
                 <Grid.Row >
                     <Grid.Column>
@@ -27,7 +27,7 @@ const LandingPage = () => {
                     </Grid.Column>
                 </Grid.Row>
             </Grid>
-            <StepUse />
+            <AboveFooter />
             <Footer />
         </div>
     );

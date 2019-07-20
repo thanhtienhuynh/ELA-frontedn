@@ -1,6 +1,6 @@
 import React from 'react';
 import {Input, Header, Grid, Rating, Button, Icon} from 'semantic-ui-react';
-import SegmentCourse from './segmentcourse/SegmentCourse';
+import CourseDetail from './coursedetail/CourseDetail';
 const styleCourse = {'marginTop': '1em', 'marginLeft' : '1em', 'marginRight': '1em'}
 const Course = () => {
     return (
@@ -12,7 +12,7 @@ const Course = () => {
                         <Button circular icon="arrow left" size="massive" color="youtube"></Button>
                     </Grid.Column>
                     <Grid.Column >
-                        <SegmentCourse
+                        <CourseDetail
                             title="Let's go 3"
                             img="http://covermaterial.com/quotes/wp-content/uploads/2017/08/blackbuckramlarge-1-300x300.jpeg"
                             des="Description 1"
@@ -22,10 +22,10 @@ const Course = () => {
                             imgCourse="http://sachtienganhgiare.vn/wp-content/uploads/2018/01/Let%E2%80%99s-go-3-phi%C3%AAn-b%E1%BA%A3n-3-student-book.jpg"
                         >
                             <Rating icon='star' defaultRating={3} maxRating={4} />
-                        </SegmentCourse>
+                        </CourseDetail>
                     </Grid.Column>
                     <Grid.Column >
-                    <SegmentCourse
+                    <CourseDetail
                             title="Summit 1"
                             img="http://covermaterial.com/quotes/wp-content/uploads/2017/08/blackbuckramlarge-1-300x300.jpeg"
                             des="Description 2"
@@ -35,10 +35,10 @@ const Course = () => {
                             imgCourse="https://images-na.ssl-images-amazon.com/images/I/41DMBMuzCrL._SX380_BO1,204,203,200_.jpg"
                         >
                             <Rating icon='star' defaultRating={3.5} maxRating={4} />
-                        </SegmentCourse>     
+                        </CourseDetail>     
                     </Grid.Column>
                     <Grid.Column >
-                    <SegmentCourse
+                    <CourseDetail
                             title="Top notch 3"
                             img="http://covermaterial.com/quotes/wp-content/uploads/2017/08/blackbuckramlarge-1-300x300.jpeg"
                             des="Description 3"
@@ -48,7 +48,7 @@ const Course = () => {
                             imgCourse="https://www.pearson.co.jp/catalog/cover/9780133928211.jpg"
                         >
                             <Rating icon='star' defaultRating={4} maxRating={4} />
-                        </SegmentCourse> 
+                        </CourseDetail> 
                     </Grid.Column>
                     <Grid.Column textAlign="center" verticalAlign="middle">  
                         <Button circular icon="arrow right" size="massive" color="youtube"></Button>

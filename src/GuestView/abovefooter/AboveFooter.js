@@ -1,6 +1,6 @@
 import React from 'react';
 import {Step, Icon} from 'semantic-ui-react'
-const StepUse = () => {
+const AboveFooter = () => {
     return (
         <Step.Group style={{'width': '100%', 'height': '10em'}}>
             <Step>
@@ -29,4 +29,4 @@ const StepUse = () => {
     )
 }
 
-export default StepUse;
+export default AboveFooter;
