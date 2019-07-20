@@ -7,36 +7,30 @@ const Lecture = () => {
     return (
         <div style={styleCourse}>
             <Header as='h2' image='https://react.semantic-ui.com/images/icons/school.png' content='Lecture' textAlign="center"/>
-            <Grid columns="5">
+            <Grid columns="equal" divided>
                 <Grid.Row>
-                    <Grid.Column>
-                        <LectureDetail>
+                    <Grid.Column >
+                        <LectureDetail name="Julietto Markow" country="USA" des="Description 1">
                             <DimmerImg />
                         </LectureDetail>
                     </Grid.Column>
                     <Grid.Column>
-                        <LectureDetail>
+                        <LectureDetail name="Tran The Tin" country="Viet Nam" des="Description 2">
                             <DimmerImg />
                         </LectureDetail>
                     </Grid.Column>
                     <Grid.Column>
-                        <LectureDetail>
-                            <DimmerImg />
-                        </LectureDetail>
-                    </Grid.Column>
-                    <Grid.Column>
-                        <LectureDetail>
-                            <DimmerImg />
-                        </LectureDetail>
-                    </Grid.Column>
-                    <Grid.Column>
-                        <LectureDetail>
+                        <LectureDetail name="Karren Legen" country="Philipine" des="Description 3">
                             <DimmerImg />
                         </LectureDetail>
                     </Grid.Column>
                 </Grid.Row>
             </Grid>
-            <Button size="big" color="green" style={{'marginTop':'1em'}}>See More</Button>
+            <Grid >
+                <Grid.Column textAlign="right">
+                    <Button size="big" color="green" style={{'marginTop':'1em'}}>See More</Button>
+                </Grid.Column>
+            </Grid>
         </div>
     )
 }

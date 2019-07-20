@@ -26,7 +26,7 @@ const Content3 = () => {
                 horizontal
                 style={{ margin: '3em 0em', textTransform: 'uppercase' }}
             >
-                <a href='#'>Get Started</a>
+                <a href='#'>Get Started Now</a>
             </Divider>
         </div>
     );

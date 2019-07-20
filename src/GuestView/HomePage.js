@@ -3,13 +3,12 @@ import Course from './course/Course'
 import Lecture from './lecture/Lecture'
 import TabSegment from './tabsegment/TabSegment'
 import StepUse from './stepuse/StepUse'
-import {Input, Segment} from 'semantic-ui-react'
+import {Image} from 'semantic-ui-react'
 const HomePage = () => {
     return (
         <div>
-            <Segment>
-                <Input fluid type="text" size="big" icon="search" iconPosition="left" placeholder="Search anything..." style={{'marginTop':'1em'}}/>
-            </Segment>
+            <Image fluid src="http://wish.edu.vn/wp-content/uploads/2017/08/Banner-ti%E1%BA%BFng-anh-c%C6%A1-b%E1%BA%A3n.png"/>
+
             <Course></Course>
             <Lecture></Lecture>
             <TabSegment></TabSegment>

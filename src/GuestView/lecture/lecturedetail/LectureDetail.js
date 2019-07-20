@@ -1,21 +1,17 @@
 import React from 'react';
-import {Card, Label} from 'semantic-ui-react'
+import {Card} from 'semantic-ui-react'
 const LectureDetail = props => {
     return (
-        <Card>
+        <Card centered>
             {props.children}
             <Card.Content>
-                <Card.Header>Karren Julietto</Card.Header>
+                <Card.Header>{props.name}</Card.Header>
                 <Card.Meta>
-                    <span className='date'>Country: Philipine</span>
+                    <span className='date'>Country: {props.country}</span>
                 </Card.Meta>
                 <Card.Description>
-                    Graduated from oxford university
+                    {props.des}
                 </Card.Description>
-            </Card.Content>
-            <Card.Content extra>
-                <Label>Summit 2</Label>
-                <Label>Top notch 3</Label>  
             </Card.Content>
         </Card>
     );
