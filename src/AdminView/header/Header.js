@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Menu } from 'semantic-ui-react'
 
 
-const styleHeader={'backgroundColor':'rgb(101, 146, 197)', 'height':'5em', 'paddingRight':'10em'};
+const styleHeader={'backgroundColor': 'rgb(45, 224, 215)', 'height':'5em', 'paddingRight':'10em'};
 const styleButton={'marginLeft':'5em','marginTop': '1em', 'fontWeight':'900'};
 
 export default class MenuHeader extends Component {

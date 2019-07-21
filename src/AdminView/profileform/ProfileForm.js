@@ -11,7 +11,7 @@ class ProfileForm extends Component {
   render() {
     const { value } = this.state
     return (
-      <Form>
+      <Form style={{'marginTop':'1em'}}>
 
         <Form.Field control={Input} label='First name' placeholder='First name' style={styleForm} />
         <Form.Field control={Input} label='Last name' placeholder='Last name' style={styleForm} />

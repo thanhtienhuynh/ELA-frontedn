@@ -1,5 +1,5 @@
 import React from 'react';
-import MenuBar from './menubar/MenuBar1';
+import MenuBar from './menubar/MenuBar';
 import Header from './header/Header';
 import { Grid } from 'semantic-ui-react';
 import SegmentProfile from './segment/Admin/SegmentProfile';
@@ -7,7 +7,6 @@ import SegmentDashboard from './segment/SegmentDashboard';
 import { BrowserRouter, Route } from 'react-router-dom'
 import SegmentCreateNews from './segment/News/SegmentCreateNews'
 import SegmentViewNews from './segment/News/SegmentViewNews'
-import SegmentUpdateNews from './segment/News/SegmentUpdateNews'
 import SegmentCreateAccount from './segment/Account/SegmentCreateAccount'
 import SegmentViewAccount from './segment/Account/SegmentViewAccount'
 import SegmentCreateClass from './segment/Class/SegmentCreateClass'
@@ -32,7 +31,6 @@ const App = () => {
                             <Route path="/admin/dashboard" exact component={SegmentDashboard} />
                             <Route path="/admin" exact component={SegmentProfile} />
                             <Route path="/admin/news/create" exact component={SegmentCreateNews} />
-                            <Route path="/admin/news/update" exact component={SegmentUpdateNews} />
                             <Route path="/admin/news/view" exact component={SegmentViewNews} />
                             <Route path="/admin/account/create" exact component={SegmentCreateAccount} />
                             <Route path="/admin/account/view" exact component={SegmentViewAccount} />

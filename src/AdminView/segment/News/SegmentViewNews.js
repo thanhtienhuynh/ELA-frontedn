@@ -1,9 +1,8 @@
 import React from 'react'
 import { Button, Item, Segment } from 'semantic-ui-react'
-import Pagination from '../../../CommonComponent/Pagination'
 
-const paragraph = <p>Description</p>
-const styleViewButton = { 'marginRight': '4em' };
+const paragraph = <p>Description: English Learning Skills<br />Time: July 31 2019<br />Topic: Skill</p>
+const styleDeleteButton = { 'marginRight': '4em', 'marginLeft': '2em' };
 
 const SegmentViewNews = () => (
     <Segment>
@@ -15,7 +14,9 @@ const SegmentViewNews = () => (
                     <Item.Header>Title A</Item.Header>
                     <Item.Description>{paragraph}</Item.Description>
                     <Item.Extra>
-                        <Button positive style={styleViewButton} floated='right'>View</Button>
+                        <Button negative style={styleDeleteButton} floated='right'>Delete</Button>
+                        <Button positive floated='right'>Edit</Button>
+                        <Button positive style={{'marginRight':'1.6em'}} floated='right'>View</Button>
                     </Item.Extra>
                 </Item.Content>
             </Item>
@@ -27,7 +28,9 @@ const SegmentViewNews = () => (
                     <Item.Header>Title B</Item.Header>
                     <Item.Description>{paragraph}</Item.Description>
                     <Item.Extra>
-                        <Button positive style={styleViewButton} floated='right'>View</Button>
+                        <Button negative style={styleDeleteButton} floated='right'>Delete</Button>
+                        <Button positive floated='right'>Edit</Button>
+                        <Button positive style={{'marginRight':'1.6em'}} floated='right'>View</Button>
                     </Item.Extra>
                 </Item.Content>
             </Item>
@@ -39,7 +42,9 @@ const SegmentViewNews = () => (
                     <Item.Header>Title C</Item.Header>
                     <Item.Description>{paragraph}</Item.Description>
                     <Item.Extra>
-                        <Button positive style={styleViewButton} floated='right'>View</Button>
+                        <Button negative style={styleDeleteButton} floated='right'>Delete</Button>
+                        <Button positive floated='right'>Edit</Button>
+                        <Button positive style={{'marginRight':'1.6em'}} floated='right'>View</Button>
                     </Item.Extra>
                 </Item.Content>
             </Item>
@@ -50,15 +55,14 @@ const SegmentViewNews = () => (
                     <Item.Header>Title C</Item.Header>
                     <Item.Description>{paragraph}</Item.Description>
                     <Item.Extra >
-                        <Button positive style={styleViewButton} floated='right'>View</Button>
+                        <Button negative style={styleDeleteButton} floated='right'>Delete</Button>
+                        <Button positive floated='right'>Edit</Button>   
+                        <Button positive style={{'marginRight':'1.6em'}} floated='right'>View</Button>
                     </Item.Extra>
                 </Item.Content>
             </Item>
 
         </Item.Group>
-        <div style={{ 'marginTop': '8em', 'textAlign': 'center' }}>
-            <Pagination ></Pagination>
-        </div>
     </Segment>
 )
 

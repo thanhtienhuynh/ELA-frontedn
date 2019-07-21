@@ -30,7 +30,7 @@ const SegmentViewAccount = () => (
                     <Table.Cell>Huynh</Table.Cell>
                     <Table.Cell>Tien</Table.Cell>
                     <Table.Cell>Admin</Table.Cell>
-                    <Table.Cell>Active</Table.Cell>
+                    <Table.Cell style={{'color':'green'}}>Active</Table.Cell>
                 </Table.Row>
                 <Table.Row>
                     <Table.Cell>MinhHY</Table.Cell>
@@ -39,7 +39,7 @@ const SegmentViewAccount = () => (
                     <Table.Cell>Hoang</Table.Cell>
                     <Table.Cell>Minh</Table.Cell>
                     <Table.Cell>Admin</Table.Cell>
-                    <Table.Cell>Active</Table.Cell>
+                    <Table.Cell style={{'color':'red'}}>Block</Table.Cell>
                 </Table.Row>
                 <Table.Row>
                     <Table.Cell>BinhTT</Table.Cell>
@@ -48,7 +48,7 @@ const SegmentViewAccount = () => (
                     <Table.Cell>Truong</Table.Cell>
                     <Table.Cell>Binh</Table.Cell>
                     <Table.Cell>Admin</Table.Cell>
-                    <Table.Cell>Active</Table.Cell>
+                    <Table.Cell style={{'color':'green'}}>Active</Table.Cell>
                 </Table.Row>
             </Table.Body>
 
