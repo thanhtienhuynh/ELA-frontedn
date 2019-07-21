@@ -25,7 +25,7 @@ class SegmentCreateClass extends Component {
   handleChange = (e, { value }) => this.setState({ value })
 
   render() {
-    const { value } = this.state
+    
     return (
       <Segment>
         <Form>

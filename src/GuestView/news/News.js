@@ -1,11 +1,10 @@
-import React from 'react'
-import { Button, Item, Segment } from 'semantic-ui-react'
-import ButtonModal from '../Exam/ButtonModal'
+import React from './node_modules/react'
+import { Button, Item, Segment } from './node_modules/semantic-ui-react'
 
 const paragraph = <p>Description</p>
-const styleDeleteButton = { 'marginRight': '4em', 'marginLeft': '2em' };
+const styleViewButton={'marginRight':'4em'};
 
-const SegmentUpdateExams = () => (
+const News = () => (
     <Segment>
         <Item.Group relaxed>
             <Item>
@@ -15,8 +14,7 @@ const SegmentUpdateExams = () => (
                     <Item.Header>Title A</Item.Header>
                     <Item.Description>{paragraph}</Item.Description>
                     <Item.Extra>
-                        <Button negative style={styleDeleteButton} floated='right'>Delete</Button>
-                        <ButtonModal></ButtonModal>
+                        <Button positive style={styleViewButton} floated='right'>View</Button>
                     </Item.Extra>
                 </Item.Content>
             </Item>
@@ -28,8 +26,7 @@ const SegmentUpdateExams = () => (
                     <Item.Header>Title B</Item.Header>
                     <Item.Description>{paragraph}</Item.Description>
                     <Item.Extra>
-                        <Button negative style={styleDeleteButton} floated='right'>Delete</Button>
-                        <ButtonModal></ButtonModal>
+                        <Button positive style={styleViewButton} floated='right'>View</Button>
                     </Item.Extra>
                 </Item.Content>
             </Item>
@@ -41,8 +38,7 @@ const SegmentUpdateExams = () => (
                     <Item.Header>Title C</Item.Header>
                     <Item.Description>{paragraph}</Item.Description>
                     <Item.Extra>
-                        <Button negative style={styleDeleteButton} floated='right'>Delete</Button>
-                        <ButtonModal></ButtonModal>
+                        <Button positive style={styleViewButton} floated='right'>View</Button>
                     </Item.Extra>
                 </Item.Content>
             </Item>
@@ -53,8 +49,7 @@ const SegmentUpdateExams = () => (
                     <Item.Header>Title C</Item.Header>
                     <Item.Description>{paragraph}</Item.Description>
                     <Item.Extra >
-                        <Button negative style={styleDeleteButton} floated='right'>Delete</Button>
-                        <ButtonModal></ButtonModal>
+                        <Button positive style={styleViewButton} floated='right'>View</Button>
                     </Item.Extra>
                 </Item.Content>
             </Item>
@@ -63,4 +58,4 @@ const SegmentUpdateExams = () => (
     </Segment>
 )
 
-export default SegmentUpdateExams;
+export default News

@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { Button, Checkbox, Form, Input, Radio, TextArea } from 'semantic-ui-react'
+import React, { Component } from './node_modules/react'
+import { Button, Checkbox, Form, Input, Radio, TextArea } from './node_modules/semantic-ui-react'
 
 const styleForm = { 'width': '40em', 'height': '3.5em' };
 

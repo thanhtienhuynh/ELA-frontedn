@@ -4,9 +4,6 @@ import { Button, Modal } from 'semantic-ui-react'
 const styleButton = { 'marginTop': '2em' };
 
 class ButtonYN extends React.Component {
-    constructor(props) {
-        super(props)
-    }
     render() {
         return (
             <Modal
