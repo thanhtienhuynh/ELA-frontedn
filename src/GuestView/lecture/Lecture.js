@@ -1,5 +1,5 @@
-import React from './node_modules/react';
-import {Header, Grid, Button} from './node_modules/semantic-ui-react';
+import React from 'react';
+import {Header, Grid, Button} from 'semantic-ui-react';
 import LectureDetail from './LectureDetail/LectureDetail'
 import DimmerImg from './DimmerLectureImage/DimmerLectureImage';
 const styleCourse = {'marginTop': '1em', 'marginLeft' : '1em', 'marginRight': '1em'}

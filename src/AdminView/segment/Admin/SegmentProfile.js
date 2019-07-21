@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Segment } from 'semantic-ui-react'
-import ProfileForm from '../../profileform/ProfileForm'
-import Avatar from '../../avatar/Avatar'
+import ProfileForm from '../../ProfileForm/ProfileForm'
+import Avatar from '../../Avatar/Avatar'
 import ButtonUpdateImage from '../../../CommonComponent/ButtonUpdateImage';
 
 export default class SegmentProfile extends Component {

@@ -1,5 +1,5 @@
-import React from './node_modules/react';
-import {Step, Icon} from './node_modules/semantic-ui-react'
+import React from 'react';
+import {Step, Icon} from 'semantic-ui-react'
 const AboveFooter = () => {
     return (
         <Step.Group style={{'width': '100%', 'height': '10em'}}>

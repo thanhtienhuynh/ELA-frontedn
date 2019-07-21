@@ -1,5 +1,5 @@
-import React from './node_modules/react'
-import { Button, Item, Segment } from './node_modules/semantic-ui-react'
+import React from 'react'
+import { Button, Item, Segment } from 'semantic-ui-react'
 
 const paragraph = <p>Description</p>
 const styleViewButton={'marginRight':'4em'};

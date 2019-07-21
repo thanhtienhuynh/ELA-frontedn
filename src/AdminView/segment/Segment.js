@@ -1,5 +1,5 @@
-import React, { Component } from './node_modules/react'
-import { Segment } from './node_modules/semantic-ui-react'
+import React, { Component } from 'react'
+import { Segment } from 'semantic-ui-react'
 
 export default class SegmentArea extends Component {
     render() {

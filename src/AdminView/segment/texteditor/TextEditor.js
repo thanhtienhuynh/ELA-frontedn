@@ -1,6 +1,6 @@
-import React, { Component } from './node_modules/react';
-import CKEditor from './node_modules/@ckeditor/ckeditor5-react';
-import ClassicEditor from './node_modules/@ckeditor/ckeditor5-build-classic';
+import React, { Component } from 'react';
+import CKEditor from '@ckeditor/ckeditor5-react';
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 class TextEditor extends Component {
   

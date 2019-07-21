@@ -1,5 +1,5 @@
-import React from './node_modules/react';
-import {Image, Grid, Divider,Header, Segment, Button} from './node_modules/semantic-ui-react'
+import React from 'react';
+import {Image, Grid, Divider,Header, Segment, Button} from 'semantic-ui-react'
 const LandingPageContent = () => {
     return (
         <div style={{'marginTop':'1em'}}>
@@ -70,7 +70,7 @@ const LandingPageContent = () => {
                 horizontal
                 style={{ margin: '3em 0em', textTransform: 'uppercase' }}
             >
-                <a href='#'>Get Started Now</a>
+                <a href="#">Get Started Now</a>
             </Divider>
         </div>
     );

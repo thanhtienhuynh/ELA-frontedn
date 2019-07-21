@@ -1,5 +1,5 @@
-import React from './node_modules/react'
-import { Container, Header, Icon } from "./node_modules/semantic-ui-react";
+import React from 'react'
+import { Container, Header, Icon } from "semantic-ui-react";
 const styleFooter = {'paddingTop':'1em', 'textAlign':'center', 'backgroundColor':'rgb(25, 25, 25)', 'color':'white'}
 const Footer = () => {
     return (

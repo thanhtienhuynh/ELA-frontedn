@@ -1,8 +1,8 @@
-import React from './node_modules/react'
-import { Menu, Container, Visibility, Segment} from './node_modules/semantic-ui-react'
-import {Link} from './node_modules/react-router-dom'
+import React from 'react'
+import { Menu, Container, Visibility, Segment} from 'semantic-ui-react'
+import {Link} from 'react-router-dom'
 import ButtonLogin from '../../GuestView/ButtonLogin/ButtonLogin'
-import ButtonSignup from '../../GuestView/ButtonSignup/ButtonSignUp'
+import ButtonSignup from '../../GuestView/ButtonSignUp/ButtonSignUp'
   
 class Header extends React.Component {
     state = {}

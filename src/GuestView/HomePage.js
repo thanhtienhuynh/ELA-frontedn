@@ -1,8 +1,8 @@
 import React from 'react';
-import Course from './course/Course'
-import Lecture from './lecture/Lecture'
-import TabSegment from './tabsegment/TabSegment'
-import AboveFooter from './abovefooter/AboveFooter'
+import Course from './Course/Course'
+import Lecture from './Lecture/Lecture'
+import TabSegment from './TabSegment/TabSegment'
+import AboveFooter from './AboveFooter/AboveFooter'
 import { Image } from 'semantic-ui-react'
 const HomePage = () => {
     return (

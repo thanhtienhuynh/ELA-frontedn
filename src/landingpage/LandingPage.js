@@ -1,11 +1,11 @@
-import React from './node_modules/react';
-import Head from './header/Header'
+import React from 'react';
+import Head from './Header/Header'
 import ContainerIntroduction from './ContainerIntroduction/ContainerIntroduction'
-import ContainerContent from './landingpage_content/LandingpageContent'
+import ContainerContent from './LandingPageContent/LandingpPageContent'
 import AboveFooter from '../GuestView/AboveFooter/AboveFooter'
 import Footer from '../GuestView/Footer/Footer';
-import News from '../GuestView/news/News';
-import {Header, Grid, Segment} from './node_modules/semantic-ui-react';
+import News from '../GuestView/News/News';
+import {Header, Grid, Segment} from 'semantic-ui-react';
 import Comments from '../GuestView/Comments/Comments';
 const LandingPage = () => {
     return (

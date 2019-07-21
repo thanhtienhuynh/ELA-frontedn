@@ -1,6 +1,6 @@
-import React from './node_modules/react'
-import { Button, Modal } from './node_modules/semantic-ui-react'
-import SignUp from '../FormSIgnup/FormSignup'
+import React from 'react'
+import { Button, Modal } from 'semantic-ui-react'
+import SignUp from '../FormSignUp/FormSignUp'
 
 const ButtonSignup= () => (
     <Modal trigger={<Button>Sign up</Button>} style={{ 'width': '40em'}}>

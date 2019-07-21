@@ -1,5 +1,5 @@
-import React, { Component } from './node_modules/react'
-import { Button, Dimmer, Header, Image } from './node_modules/semantic-ui-react'
+import React, { Component } from 'react'
+import { Button, Dimmer, Header, Image } from 'semantic-ui-react'
 
 export default class DimmerImg extends Component {
   state = {}

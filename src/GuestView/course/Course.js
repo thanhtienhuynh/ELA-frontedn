@@ -1,5 +1,5 @@
-import React from './node_modules/react';
-import {Input, Header, Grid, Rating, Button, Icon} from './node_modules/semantic-ui-react';
+import React from 'react';
+import {Input, Header, Grid, Rating, Button, Icon} from 'semantic-ui-react';
 import CourseDetail from './CourseDetail/CourseDetail';
 const styleCourse = {'marginTop': '1em', 'marginLeft' : '1em', 'marginRight': '1em'}
 const Course = () => {

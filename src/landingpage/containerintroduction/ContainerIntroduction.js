@@ -1,6 +1,6 @@
-import React from './node_modules/react';
-import { Link } from './node_modules/react-router-dom';
-import { Container, Header, Button, Icon, Grid } from './node_modules/semantic-ui-react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Container, Header, Button, Icon, Grid } from 'semantic-ui-react'
 const styleContent = { 'paddingTop': '5em', 'paddingBottom': '5em', 'backgroundColor': '#1b1c1d' }
 const Content = () => {
     return ( 

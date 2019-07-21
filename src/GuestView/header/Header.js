@@ -1,8 +1,8 @@
-import React from './node_modules/react'
-import { Menu, Input, Visibility, Segment} from './node_modules/semantic-ui-react'
-import {Link} from './node_modules/react-router-dom'
-import ButtonLogin from '../buttonlogin/ButtonLogin'
-import ButtonSignup from '../buttonsignup/ButtonSignUp'
+import React from 'react'
+import { Menu, Input, Visibility, Segment} from 'semantic-ui-react'
+import {Link} from 'react-router-dom'
+import ButtonLogin from '../ButtonLogin/ButtonLogin'
+import ButtonSignup from '../ButtonSignUp/ButtonSignUp'
 const styleLogo={'marginTop': '0.3em', 'fontWeight':'900', 'fontSize': '1.5em', 'fontFamily': 'cursive', 'marginLeft': '1em'}
   
 class Header extends React.Component {

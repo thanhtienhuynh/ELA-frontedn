@@ -1,5 +1,5 @@
-import React from './node_modules/react'
-import { Button, Modal } from './node_modules/semantic-ui-react'
+import React from 'react'
+import { Button, Modal } from 'semantic-ui-react'
 import FormLogin from '../FormLogin/FormLogin'
 
 const ButtonLogin = () => (

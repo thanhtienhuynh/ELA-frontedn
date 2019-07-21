@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { Segment, Form, Input } from 'semantic-ui-react'
-import TextEditor from '../texteditor/TextEditor'
+import TextEditor from '../TextEditor/TextEditor'
 import ButtonCreat from '../../../CommonComponent/ButtonYN'
 import ButtonUpdateImage from '../../../CommonComponent/ButtonUpdateImage';
-import Avatar from '../../avatar/Avatar'
+import Avatar from '../../Avatar/Avatar'
 
 const styleForm = { 'height': '3.5em', 'marginBottom': '2em'};
 const styleSegment = {'paddingTop':'2em'};

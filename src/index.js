@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import Admin from './AdminView/App.js';
 import Guest from './GuestView/App.js'
 import { BrowserRouter, Route } from 'react-router-dom'
-import LandingPage from './landingpage/LandingPage.js';
+import LandingPage from './LandingPage/LandingPage.js';
 
 ReactDOM.render(
     <BrowserRouter>

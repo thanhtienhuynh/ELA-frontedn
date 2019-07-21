@@ -1,6 +1,6 @@
-import React, { Component } from './node_modules/react'
-import { Menu, Dropdown, Input } from './node_modules/semantic-ui-react'
-import { Link } from './node_modules/react-router-dom';
+import React, { Component } from 'react'
+import { Menu, Dropdown, Input } from 'semantic-ui-react'
+import { Link } from 'react-router-dom';
 
 const styleHeader={'backgroundColor':'rgb(20, 20, 20)', 'height':'5em', 'paddingRight':'2em'};
 const styleItem={'marginLeft':'5em','marginTop': '0em', 'fontWeight':'900', 'color' : 'white'};

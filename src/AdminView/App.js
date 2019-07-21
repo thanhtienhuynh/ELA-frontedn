@@ -1,20 +1,20 @@
 import React from 'react';
-import MenuBar from './menubar/MenuBar';
-import Header from './header/Header';
+import MenuBar from './MenuBar/MenuBar';
+import Header from './Header/Header';
 import { Grid } from 'semantic-ui-react';
-import SegmentProfile from './segment/Admin/SegmentProfile';
-import SegmentDashboard from './segment/SegmentDashboard';
+import SegmentProfile from './Segment/Admin/SegmentProfile';
+import SegmentDashboard from './Segment/SegmentDashboard';
 import { BrowserRouter, Route } from 'react-router-dom'
-import SegmentCreateNews from './segment/News/SegmentCreateNews'
-import SegmentViewNews from './segment/News/SegmentViewNews'
-import SegmentCreateAccount from './segment/Account/SegmentCreateAccount'
-import SegmentViewAccount from './segment/Account/SegmentViewAccount'
-import SegmentCreateClass from './segment/Class/SegmentCreateClass'
-import SegmentViewClass from './segment/Class/SegmentViewClass';
-import SegmentUpdateClass from './segment/Class/SegmentUpdateAccount';
-import SegmentCreateExam from './segment/Exam/SegmentCreateExam';
-import SegmentViewExam from './segment/Exam/SegmentViewExam';
-import SegmentUpdateExams from './segment/Exam/SegmentUpdateExam';
+import SegmentCreateNews from './Segment/News/SegmentCreateNews'
+import SegmentViewNews from './Segment/News/SegmentViewNews'
+import SegmentCreateAccount from './Segment/Account/SegmentCreateAccount'
+import SegmentViewAccount from './Segment/Account/SegmentViewAccount'
+import SegmentCreateClass from './Segment/Class/SegmentCreateClass'
+import SegmentViewClass from './Segment/Class/SegmentViewClass';
+import SegmentUpdateClass from './Segment/Class/SegmentUpdateAccount';
+import SegmentCreateExam from './Segment/Exam/SegmentCreateExam';
+import SegmentViewExam from './Segment/Exam/SegmentViewExam';
+import SegmentUpdateExams from './Segment/Exam/SegmentUpdateExam';
 
 const App = () => {
     return (
