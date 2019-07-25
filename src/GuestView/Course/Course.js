@@ -1,11 +1,18 @@
 import React from 'react';
-import {Input, Header, Grid, Rating, Button, Icon} from 'semantic-ui-react';
+import {Input, Divider, Grid, Rating, Button, Icon} from 'semantic-ui-react';
 import CourseDetail from './CourseDetail/CourseDetail';
 const styleCourse = {'marginTop': '1em', 'marginLeft' : '1em', 'marginRight': '1em'}
 const Course = () => {
     return (
         <div style={styleCourse}>
-            <Header as='h2' textAlign="center"><Icon name="book"/>Courses</Header>
+            <Divider
+            as='h1'
+            className='header'
+            horizontal
+            style={{ margin: '3em 0em', textTransform: 'uppercase' }}
+        >
+            <a href="#"><Icon name="book"/>Courses</a>
+        </Divider>
             <Grid columns="equal">
                 <Grid.Row>
                     <Grid.Column textAlign="center" verticalAlign="middle">
