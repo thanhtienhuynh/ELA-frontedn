@@ -23,7 +23,11 @@ const Course = () => {
                             title="Let's go 3"
                             img="http://covermaterial.com/quotes/wp-content/uploads/2017/08/blackbuckramlarge-1-300x300.jpeg"
                             des="Description 1"
-                            content="Conten 1"
+                            content="Welcome to our English Center!
+                            We can help you improve your English skills includes: Reading, Speaking, Writing and Listening. We create an environment where you not only improve your English skills but also develop many other soft skills.
+                            
+                            Morden Learning Enviroment
+                            Our facilities are equipped with state-of-the-art equipment."
                             price="200$"    
                             date="7/6/2019"
                             imgCourse="http://sachtienganhgiare.vn/wp-content/uploads/2018/01/Let%E2%80%99s-go-3-phi%C3%AAn-b%E1%BA%A3n-3-student-book.jpg"
@@ -36,7 +40,11 @@ const Course = () => {
                             title="Summit 1"
                             img="http://covermaterial.com/quotes/wp-content/uploads/2017/08/blackbuckramlarge-1-300x300.jpeg"
                             des="Description 2"
-                            content="Conten 2"
+                            content="Welcome to our English Center!
+                            We can help you improve your English skills includes: Reading, Speaking, Writing and Listening. We create an environment where you not only improve your English skills but also develop many other soft skills.
+                            
+                            Morden Learning Enviroment
+                            Our facilities are equipped with state-of-the-art equipment."
                             price="200$"    
                             date="7/19/2019"
                             imgCourse="https://images-na.ssl-images-amazon.com/images/I/41DMBMuzCrL._SX380_BO1,204,203,200_.jpg"
@@ -49,7 +57,11 @@ const Course = () => {
                             title="Top notch 3"
                             img="http://covermaterial.com/quotes/wp-content/uploads/2017/08/blackbuckramlarge-1-300x300.jpeg"
                             des="Description 3"
-                            content="Conten 3"
+                            content="Welcome to our English Center!
+                            We can help you improve your English skills includes: Reading, Speaking, Writing and Listening. We create an environment where you not only improve your English skills but also develop many other soft skills.
+                            
+                            Morden Learning Enviroment
+                            Our facilities are equipped with state-of-the-art equipment."
                             price="120$"    
                             date="7/15/2019"
                             imgCourse="https://www.pearson.co.jp/catalog/cover/9780133928211.jpg"
@@ -61,11 +73,6 @@ const Course = () => {
                         <Button circular icon="arrow right" size="massive" color="youtube"></Button>
                     </Grid.Column>
                 </Grid.Row>
-            </Grid>
-            <Grid style={{'marginTop':'1em'}}>
-                <Grid.Column textAlign="center">
-                    <Input focus placeholder="Find course..." icon="search" size="big"/>
-                </Grid.Column>
             </Grid>
             
 

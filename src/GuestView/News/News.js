@@ -18,6 +18,7 @@ const News = () => (
                         <Image src='https://react.semantic-ui.com/images/movies/totoro-horizontal.jpg' />
                         <Card.Content>
                             <Card.Header>My Neighbor Totoro</Card.Header>
+                            <Card.Meta>Admin - 9:00AM 6/7/2019</Card.Meta>
                             <Card.Description>
                                 Two sisters move to the country with their father in order to be
                                 closer to their hospitalized mother, and discover the surrounding
@@ -38,6 +39,7 @@ const News = () => (
                                 </Grid.Column>
                                 <Grid.Column width={10}>
                                     <Header>My Neighbor Totoro</Header>
+                                    <Header.Subheader>Admin - 9:00AM 6/7/2019</Header.Subheader>
                                 </Grid.Column>
                             </Grid.Row>
                             <Grid.Row >
@@ -62,6 +64,7 @@ const News = () => (
                                 </Grid.Column>
                                 <Grid.Column width={10}>
                                     <Header>My Neighbor Totoro</Header>
+                                    <Header.Subheader>Admin - 9:00AM 6/7/2019</Header.Subheader>
                                 </Grid.Column>
                             </Grid.Row>
                             <Grid.Row >
@@ -88,6 +91,7 @@ const News = () => (
                                 </Grid.Column>
                                 <Grid.Column width={10}>
                                     <Header>My Neighbor Totoro</Header>
+                                    <Header.Subheader>Admin - 9:00AM 6/7/2019</Header.Subheader>
                                 </Grid.Column>
                             </Grid.Row>
                             <Grid.Row >
@@ -112,6 +116,7 @@ const News = () => (
                                 </Grid.Column>
                                 <Grid.Column width={10}>
                                     <Header>My Neighbor Totoro</Header>
+                                    <Header.Subheader>Admin - 9:00AM 6/7/2019</Header.Subheader>
                                 </Grid.Column>
                             </Grid.Row>
                             <Grid.Row >
@@ -130,6 +135,11 @@ const News = () => (
                     </Segment>
                 </Grid.Column>
             </Grid.Row>
+        </Grid>
+        <Grid>
+            <Grid.Column textAlign="right">
+                <Button content="View more news..." basic color="blue"/>
+            </Grid.Column>
         </Grid>
     </div>
     

@@ -15,20 +15,17 @@ const SegmentCourse = props => {
                 <Modal trigger={<Button basic color='green' style={{'width': '100%'}}>View</Button>}>
                     <Modal.Header>Course Information</Modal.Header>
                     <Modal.Content image>
-                        <Image wrapped size='medium' src={props.imgCourse} />
+                        <Image wrapped size='massive' src={props.imgCourse} />
                         <Modal.Description>
                             <Header>{props.title}</Header>
-                            <p><b>{props.title}:&nbsp;</b>{props.content}</p>
+                            <p>{props.content}</p>
                             <p>Price:&nbsp;<b>{props.price}</b></p>
                             <p>Time:&nbsp;<b>{props.date}</b></p>
-                            <Button.Group style={{'float': 'right'}}>
-                                <Button primary>Attend</Button>
-                                <Button.Or />
-                                <Button secondary>Detailed Information</Button>
-                            </Button.Group>
                         </Modal.Description>
-                        
                     </Modal.Content>
+                    <Modal.Actions>
+                        <Button primary size="big" >Attend</Button>
+                    </Modal.Actions>
                 </Modal>
             </Card.Content>
         </Card>
