@@ -4,84 +4,54 @@ import 'antd/dist/antd.css';
 import { Table, Input, Button, Icon } from 'antd';
 import Highlighter from 'react-highlight-words';
 import {Segment } from 'semantic-ui-react'
-import ButtonEdit from './ButtonEditClass'
-import ButtonDelete from './ButtonDeleteClass'
+import ButtonEdit from './ButtonEditCourse'
+import ButtonDelete from './ButtonDeleteCourse'
 
 const data = [
     {
         key: '1',
-        name: 'SE1319',
-        course: 'IELTS 1',
-        starteddate: '25/09/2019',
-        finisheddate: '30/09/2019',
-        slot: '3',
-        totalslot: '30',
-        minstudent: '15',
-        maxstudent: '25',
-        currentstudent: '20',
+        name: 'IELTS 1',
+        totaltime: '30',
+        price: '5.000.000 VND',
+        status: 'Active',
     },
     {
         key: '2',
-        name: 'SE1319',
-        course: 'IELTS 1',
-        starteddate: '25/09/2019',
-        finisheddate: '28/09/2019',
-        slot: '3',
-        totalslot: '30',
-        minstudent: '15',
-        maxstudent: '25',
-        currentstudent: '20',
+        name: 'IELTS 1',
+        totaltime: '30',
+        price: '5.000.000 VND',
+        status: 'Active',
     }, {
         key: '3',
-        name: 'SE1319',
-        course: 'IELTS 1',
-        starteddate: '25/09/2019',
-        finisheddate: '01/10/2019',
-        slot: '3',
-        totalslot: '30',
-        minstudent: '15',
-        maxstudent: '25',
-        currentstudent: '20',
+        name: 'IELTS 1',
+        totaltime: '30',
+        price: '5.000.000 VND',
+        status: 'Active',
     }, {
         key: '4',
-        name: 'SE1319',
-        course: 'IELTS 1',
-        starteddate: '25/09/2019',
-        finisheddate: '30/09/2019',
-        slot: '3',
-        totalslot: '30',
-        minstudent: '15',
-        maxstudent: '25',
-        currentstudent: '20',
+        name: 'IELTS 1',
+        totaltime: '30',
+        price: '5.000.000 VND',
+        status: 'Active',
     },
     {
         key: '5',
-        name: 'SE1319',
-        course: 'IELTS 1',
-        starteddate: '25/09/2019',
-        finisheddate: '30/09/2019',
-        slot: '3',
-        totalslot: '30',
-        minstudent: '15',
-        maxstudent: '25',
-        currentstudent: '20',
+        name: 'IELTS 1',
+        totaltime: '30',
+        price: '5.000.000 VND',
+        status: 'Active',
     }, {
         key: '6',
-        name: 'SE1319',
-        course: 'IELTS 1',
-        starteddate: '25/09/2019',
-        finisheddate: '30/09/2019',
-        slot: '3',
-        totalslot: '30',
-        minstudent: '15',
-        maxstudent: '25',
-        currentstudent: '20',
+        name: 'IELTS 1',
+        totaltime: '30',
+        price: '5.000.000 VND',
+        status: 'Active',
     },
 ];
 
 
 
-export default class SegmentViewAccount extends React.Component {
+export default class SegmentViewCourse extends React.Component {
 
     state = {
         searchText: '',
@@ -157,54 +127,16 @@ export default class SegmentViewAccount extends React.Component {
                 ...this.getColumnSearchProps('name'),
             },
             {
-                title: 'Course',
-                dataIndex: 'course',
-            },
-            {
-                title: 'Started Date',
-                dataIndex: 'starteddate',
-                key: 'starteddate',
-                sorter: (a, b) => a.starteddate.length - b.starteddate.length,
-                sortDirections: ['descend', 'ascend'],
-                ...this.getColumnSearchProps('starteddate'),
-            },
-            {
-                title: 'Finished Date',
-                dataIndex: 'finisheddate',
-                key: 'finisheddate',
-                sorter: (a, b) => a.finisheddate.length - b.finisheddate.length,
-                sortDirections: ['descend', 'ascend'],
-                ...this.getColumnSearchProps('finisheddate'),
-            },
-            {
-                title: 'Slot',
-                dataIndex: 'slot',
-                key: 'slot',
-                ...this.getColumnSearchProps('slot'),
-            },
-            {
                 title: 'Total Slot',
-                dataIndex: 'totalslot',
-                key: 'totalslot',
-                
+                dataIndex: 'totaltime',
             },
             {
-                title: 'Min Student',
-                dataIndex: 'minstudent',
-                key: 'minstudent',
-                
-            },
-            {
-                title: 'Max Student',
-                dataIndex: 'maxstudent',
-                key: 'maxstudent',
-                
-            },
-            {
-                title: 'Current Student',
-                dataIndex: 'currentstudent',
-                key: 'currentstudent',
-               
+                title: 'Price',
+                dataIndex: 'price',
+                key: 'pirce',
+                sorter: (a, b) => a.price.length - b.price.length,
+                sortDirections: ['descend', 'ascend'],
+                ...this.getColumnSearchProps('price'),
             },
             {
                 title: 'Action',

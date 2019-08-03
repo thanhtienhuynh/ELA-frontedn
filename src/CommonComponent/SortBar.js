@@ -7,6 +7,6 @@ const options = [
   { key: 'date', text: 'By date', value: 'By date' },
 ]
 
-const SortBar = () => <Dropdown clearable options={options} selection />
+const SortBar = () => <Dropdown placeholder='Sort by' clearable options={options} selection />
 
 export default SortBar;

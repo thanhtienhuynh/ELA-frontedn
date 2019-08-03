@@ -29,17 +29,10 @@ export default class AccordionExampleInverted extends Component {
     return (
       <Segment style={styleMenuBar} inverted>
         <Accordion inverted>
-          <Accordion.Title style={styleMenuItem} active={activeIndex === 0} index={0} onClick={this.handleClick}>
-            <Icon name='dropdown' />
+          <Accordion.Title style={styleMenuItem} active={activeIndex === 0} index={0} onClick={this.handleClick} as={Link} to="/admin">
             Admin
           </Accordion.Title>
-
-          <Accordion.Content active={activeIndex === 0}>
-            <Menu style={{ 'width': '22em' }} inverted vertical>
-              <Menu.Item style={styleItem} name='Profile' active={activeItem === 'profile'} onClick={this.handleItemClickOnItem} />
-            </Menu>
-          </Accordion.Content>
-
+          <br></br>
           <Accordion.Title style={styleMenuItem} active={activeIndex === 1} index={1} onClick={this.handleClick} as={Link} to="/admin/dashboard">
             Dashboard
           </Accordion.Title>
@@ -116,12 +109,6 @@ export default class AccordionExampleInverted extends Component {
                 onClick={this.handleItemClickOnItem}
                 as={Link} to="/admin/class/create"
               />
-              <Menu.Item
-                name='Update'
-                active={activeItem === 'update'}
-                onClick={this.handleItemClickOnItem}
-                as={Link} to="/admin/class/update"
-              />
             </Menu>
           </Accordion.Content>
 
@@ -135,19 +122,19 @@ export default class AccordionExampleInverted extends Component {
               <Menu.Item name='View'
                 active={activeItem === 'view'}
                 onClick={this.handleItemClickOnItem}
-                as={Link} to="/admin/news/view"
+                as={Link} to="/admin/dashboard"
               />
               <Menu.Item
                 name='Create'
                 active={activeItem === 'create'}
                 onClick={this.handleItemClickOnItem}
-                as={Link} to="/admin/news/view"
+                as={Link} to="/admin/dashboard"
               />
               <Menu.Item
                 name='Update'
                 active={activeItem === 'update'}
                 onClick={this.handleItemClickOnItem}
-                as={Link} to="/admin/news/view"
+                as={Link} to="/admin/dashboard"
               />
             </Menu>
           </Accordion.Content>
@@ -162,19 +149,13 @@ export default class AccordionExampleInverted extends Component {
               <Menu.Item name='View'
                 active={activeItem === 'view'}
                 onClick={this.handleItemClickOnItem}
-                as={Link} to="/admin/news/view"
+                as={Link} to="/admin/course/view"
               />
               <Menu.Item
                 name='Create'
                 active={activeItem === 'create'}
                 onClick={this.handleItemClickOnItem}
-                as={Link} to="/admin/news/view"
-              />
-              <Menu.Item
-                name='Update'
-                active={activeItem === 'update'}
-                onClick={this.handleItemClickOnItem}
-                as={Link} to="/admin/news/view"
+                as={Link} to="/admin/course/create"
               />
             </Menu>
           </Accordion.Content>
@@ -196,12 +177,6 @@ export default class AccordionExampleInverted extends Component {
                 active={activeItem === 'create'}
                 onClick={this.handleItemClickOnItem}
                 as={Link} to="/admin/exam/create"
-              />
-              <Menu.Item
-                name='Update'
-                active={activeItem === 'update'}
-                onClick={this.handleItemClickOnItem}
-                as={Link} to="/admin/exam/update"
               />
             </Menu>
           </Accordion.Content>

@@ -5,7 +5,6 @@ import {Route, BrowserRouter} from 'react-router-dom'
 import HomePage from './HomePage';
 const App = () => {
     return(
-        <div>
             <div>
                 <BrowserRouter>
                     <Route path="/homepage" component={Header} />
@@ -13,7 +12,6 @@ const App = () => {
                     <Route path="/homepage" component={Footer} />
                 </BrowserRouter>
             </div>
-        </div>
     );
 }
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Button, Form, Input, Radio, Image, Segment } from 'semantic-ui-react'
 
-const styleForm = { 'width': '40em', 'height': '3.5em' };
+const styleForm = { 'width': '30em', 'height': '3.5em' };
 
 class SegmentCreateAccount extends Component {
     state = {}
@@ -12,14 +12,12 @@ class SegmentCreateAccount extends Component {
         const { value } = this.state
         return (
             <Segment>
-                <Image style={{ marginBottom: '3em', marginTop: '1em' }} src='https://react.semantic-ui.com/images/wireframe/square-image.png' circular />
-                <Form>
+                <Image style={{ marginBottom: '1em', marginTop: '1em' }} src='https://react.semantic-ui.com/images/wireframe/square-image.png' circular />
+                <Form  style={{'marginTop':'15px'}}>
                     <Form.Group widths='equal'>
                         <Form.Field required fluid control={Input} label='First name' placeholder='First name' style={styleForm} />
                         <Form.Field required fluid control={Input} label='Last name' placeholder='Last name' style={styleForm} />
                     </Form.Group>
-
-
                     <Form.Group inline>
                         <label>Gender</label>
                         <Form.Field
@@ -79,8 +77,12 @@ class SegmentCreateAccount extends Component {
                             onChange={this.handleChange}
                         />
                     </Form.Group>
-                    <Form.Field positive control={Button}>Create</Form.Field>
+                    <Form.Group>
+                        <Form.Field positive control={Button}>Save</Form.Field>
+                        <Button negative>Cancel</Button></Form.Group>
+
                 </Form>
+
             </Segment>
         )
     }

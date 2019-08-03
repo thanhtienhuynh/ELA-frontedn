@@ -1,69 +1,71 @@
-import React from 'react'
-import { Button, Item, Segment } from 'semantic-ui-react'
 
-const paragraph = <p>Description: English Learning Skills<br />Time: July 31 2019<br />Topic: Skill</p>
-const styleDeleteButton = { 'marginRight': '4em', 'marginLeft': '2em' };
+import React, { Component } from 'react';
+import 'antd/dist/antd.css';
+import { List, Avatar, Icon } from 'antd';
+import { Segment } from 'semantic-ui-react'
+import { Button } from 'react-md';
 
-const SegmentViewNews = () => (
-    <Segment>
-        <Item.Group relaxed>
-            <Item>
-                <Item.Image size='small' src='https://react.semantic-ui.com/images/wireframe/square-image.png' />
+const listData = [];
+for (let i = 0; i < 23; i++) {
+    listData.push({
+        // href: 'http://ant.design',
+        title: `News ${i}`,
+        avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
+        description:
+            'A new method for learning English more efficient.',
+        content:
+            'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
+    });
+}
 
-                <Item.Content verticalAlign='middle'>
-                    <Item.Header>Title A</Item.Header>
-                    <Item.Description>{paragraph}</Item.Description>
-                    <Item.Extra>
-                        <Button negative style={styleDeleteButton} floated='right'>Delete</Button>
-                        <Button positive floated='right'>Edit</Button>
-                        <Button positive style={{'marginRight':'1.6em'}} floated='right'>View</Button>
-                    </Item.Extra>
-                </Item.Content>
-            </Item>
+const IconText = ({ type, text }) => (
+    <span>
+        <Icon type={type} style={{ marginRight: 8 }} />
+        {text}
+    </span>
+);
 
-            <Item>
-                <Item.Image size='small' src='https://react.semantic-ui.com/images/wireframe/square-image.png' />
-
-                <Item.Content verticalAlign='middle'>
-                    <Item.Header>Title B</Item.Header>
-                    <Item.Description>{paragraph}</Item.Description>
-                    <Item.Extra>
-                        <Button negative style={styleDeleteButton} floated='right'>Delete</Button>
-                        <Button positive floated='right'>Edit</Button>
-                        <Button positive style={{'marginRight':'1.6em'}} floated='right'>View</Button>
-                    </Item.Extra>
-                </Item.Content>
-            </Item>
-
-            <Item>
-                <Item.Image size='small' src='https://react.semantic-ui.com/images/wireframe/square-image.png' />
-
-                <Item.Content verticalAlign='middle'>
-                    <Item.Header>Title C</Item.Header>
-                    <Item.Description>{paragraph}</Item.Description>
-                    <Item.Extra>
-                        <Button negative style={styleDeleteButton} floated='right'>Delete</Button>
-                        <Button positive floated='right'>Edit</Button>
-                        <Button positive style={{'marginRight':'1.6em'}} floated='right'>View</Button>
-                    </Item.Extra>
-                </Item.Content>
-            </Item>
-            <Item>
-                <Item.Image size='small' src='https://react.semantic-ui.com/images/wireframe/square-image.png' />
-
-                <Item.Content verticalAlign='middle'>
-                    <Item.Header>Title C</Item.Header>
-                    <Item.Description>{paragraph}</Item.Description>
-                    <Item.Extra >
-                        <Button negative style={styleDeleteButton} floated='right'>Delete</Button>
-                        <Button positive floated='right'>Edit</Button>   
-                        <Button positive style={{'marginRight':'1.6em'}} floated='right'>View</Button>
-                    </Item.Extra>
-                </Item.Content>
-            </Item>
-
-        </Item.Group>
-    </Segment>
-)
-
-export default SegmentViewNews
+export default class SegmentCreateNews extends Component {
+    render() {
+        return (
+            <Segment>
+                <List
+                    itemLayout="vertical"
+                    size="large"
+                    pagination={{
+                        onChange: page => {
+                            console.log(page);
+                        },
+                        pageSize: 4,
+                    }}
+                    dataSource={listData}
+                    renderItem={item => (
+                        <List.Item
+                            key={item.title}
+                            actions={[
+                                <IconText type="star-o" text="156" />,
+                                <IconText type="like-o" text="156" />,
+                                <IconText type="message" text="2" />,
+                            ]}
+                            extra={
+                                <img
+                                    width={272}
+                                    alt="logo"
+                                    src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
+                                />
+                            }
+                        >
+                            <List.Item.Meta
+                                avatar={<Avatar src={item.avatar} />}
+                                title={<a href={item.href}>{item.title}</a>}
+                                description={item.description}
+                            > </List.Item.Meta>
+                            {item.content}<br></br>
+                            
+                        </List.Item>
+                    )}
+                />
+            </Segment>
+        )
+    }
+}

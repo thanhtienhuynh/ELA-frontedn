@@ -1,5 +1,10 @@
 import React, { Component } from 'react'
 import { Form, Segment } from 'semantic-ui-react'
+import { Calendar } from 'primereact/calendar';
+import 'primereact/resources/themes/nova-light/theme.css';
+import 'primereact/resources/primereact.min.css';
+import 'primeicons/primeicons.css';
+
 
 const optionSlot = [
   { key: 's1', text: 'Slot 1', value: 'slot1' },
@@ -20,28 +25,28 @@ const optionCourse = [
 ]
 
 class SegmentCreateClass extends Component {
-  state = {}
+  state = {startedDate: '', finishedDate: ''}
 
   handleChange = (e, { value }) => this.setState({ value })
 
   render() {
-    
+
     return (
       <Segment>
         <Form>
-          <Form.Input fluid label='Name' placeholder='Name' />
-          <Form.Group widths='equal'>
-            <Form.Input fluid label='Started Date' placeholder='Started Date' />
-            <Form.Input fluid label='Finished Date' placeholder='Finished Date' />
-          </Form.Group>
-          <Form.Select fluid label='Slot' options={optionSlot} placeholder='Slot' />
-          <Form.Select fluid label='Course' options={optionCourse} placeholder='Course' />
+          <Form.Input required style={{ 'marginBottom': '2em', 'width':'52em' }} fluid label='Name' placeholder='Name' />
+          <label style={{ 'fontWeight': '800' }}>Started Date</label> <br></br>
+          <Calendar placeholder='Started Date' style={{ 'marginTop': '0.5em', 'width': '50em', 'marginBottom':'2em' }} value={this.state.startedDate} onChange={(e) => this.setState({ startedDate: e.value })} showButtonBar={true} showIcon={true} ></Calendar> <br></br>
+          <label style={{ 'fontWeight': '800' }}>Finished Date</label> <br></br>
+          <Calendar placeholder='Finished Date' style={{ 'marginTop': '0.5em', 'width': '50em', 'marginBottom':'2em' }} value={this.state.finishedDate} onChange={(e) => this.setState({ finishedDate: e.value })} showButtonBar={true} showIcon={true} ></Calendar> <br></br>
+          <Form.Select required style={{ 'marginBottom': '2em', 'width':'52em' }} fluid label='Slot' options={optionSlot} placeholder='Slot' />
+          <Form.Select required style={{ 'marginBottom': '2em', 'width':'52em' }} fluid label='Course' options={optionCourse} placeholder='Course' />
           <Form.Group widths='equal'>
             <Form.Input fluid label='Min Student' placeholder='Max Student' />
             <Form.Input fluid label='Max Student' placeholder='Max Student' />
             <Form.Input fluid label='Total Slot' placeholder='Total Slot' />
           </Form.Group>
-          <Form.Button>Create</Form.Button>
+          <Form.Button positive>Create</Form.Button>
         </Form>
       </Segment>
     )
