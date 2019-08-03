@@ -24,6 +24,7 @@
     "react-rte": "^0.16.1",
     "react-sanfona": "^1.4.0",
     "react-scripts": "^3.0.1",
+    "react-transition-group": "^4.2.2",
     "semantic-ui-react": "^0.87.2"
   },
   "scripts": {

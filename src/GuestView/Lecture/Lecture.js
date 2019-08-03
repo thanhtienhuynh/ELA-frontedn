@@ -2,10 +2,10 @@ import React from 'react';
 import {Divider, Grid, Button} from 'semantic-ui-react';
 import LectureDetail from './LectureDetail/LectureDetail'
 import DimmerImg from './DimmerLectureImage/DimmerLectureImage';
-const styleCourse = {'marginTop': '1em', 'marginLeft' : '1em', 'marginRight': '1em'}
+const styleLecture = {'marginTop': '1em', 'marginLeft' : '1em', 'marginRight': '1em'}
 const Lecture = () => {
     return (
-        <div style={styleCourse}>
+        <div style={styleLecture}>
             <Divider
                 as='h1'
                 className='header'
