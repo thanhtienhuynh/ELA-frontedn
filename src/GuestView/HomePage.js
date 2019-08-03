@@ -1,16 +1,52 @@
 import React from 'react';
 import Course from './Course/Course'
 import Lecture from './Lecture/Lecture'
-import TabSegment from './TabSegment/TabSegment'
+import News from './News/News'
+import Comments from './Comments/Comments'
 import AboveFooter from './AboveFooter/AboveFooter'
-import { Image } from 'semantic-ui-react'
+import {Image, Grid, Icon, Step} from 'semantic-ui-react'
 const HomePage = () => {
     return (
         <div>
-            <Image fluid src="http://wish.edu.vn/wp-content/uploads/2017/08/Banner-ti%E1%BA%BFng-anh-c%C6%A1-b%E1%BA%A3n.png" />
+            <Grid padded columns={2}>
+                <Grid.Row stretched >
+                    <Grid.Column width={9}>
+                        <Image src="https://banner2.kisspng.com/20180219/bve/kisspng-skyline-silhouette-illustration-vector-london-building-5a8b75dc0099e3.2131424415190891160025.jpg"/>
+                    </Grid.Column>
+                    <Grid.Column width={7}>
+                        <Step.Group vertical>
+                            <Step completed>
+                                <Icon name='truck' />
+                                <Step.Content>
+                                    <Step.Title>100% Courses in English</Step.Title>
+                                    <Step.Description>Our courses are bought from famous universities in US, UK</Step.Description>
+                                </Step.Content>
+                            </Step>
+                            <Step completed>
+                                <Icon name='truck' />
+                                <Step.Content>
+                                    <Step.Title>English Communication Environment</Step.Title>
+                                    <Step.Description>We create the best conditions for students to exchange in English</Step.Description>
+                                </Step.Content>
+                            </Step>
+                            <Step completed>
+                                <Icon name='truck' />
+                                <Step.Content>
+                                    <Step.Title>Enthusiastic, Experienced teachers</Step.Title>
+                                    <Step.Description>
+                                        Teachers have a lot of experience in developing comprehensive English skills
+                                    </Step.Description>
+                                </Step.Content>
+                            </Step>
+                        </Step.Group>
+                    </Grid.Column>
+                </Grid.Row>
+                
+            </Grid>
             <Course></Course>
             <Lecture></Lecture>
-            <TabSegment></TabSegment>
+            <News></News>
+            <Comments></Comments>
             <AboveFooter></AboveFooter>
         </div>
     );

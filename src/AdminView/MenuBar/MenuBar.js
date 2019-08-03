@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { Accordion, Icon, Segment, Menu } from 'semantic-ui-react'
 import { Link } from 'react-router-dom';
 
-const styleItem = { 'lineHeight': '1.2em', 'fontSize': '17px' }
 const styleMenuBar = { 'width': '25em', 'height': '62em', 'borderRadius': '0px' };
 const styleMenuItem = { 'lineHeight': '3.2em', 'fontSize': '17px' };
 

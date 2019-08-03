@@ -47,7 +47,14 @@ const LandingPageContent = () => {
                     </Grid.Row>
                 </Grid>
             </Segment>
-            <Header content="Detail Courses" as='h3' style={{ fontSize: '2em' }} textAlign="center"/>
+            <Divider
+                as='h1'
+                className='header'
+                horizontal
+                style={{ margin: '3em 0em', textTransform: 'uppercase' }}
+            >
+                <a href="#">Course Detail</a>
+            </Divider>
             <Grid columns="3" >
                 <Grid.Row>
                     <Grid.Column textAlign="center">
@@ -64,14 +71,6 @@ const LandingPageContent = () => {
                     </Grid.Column>
                 </Grid.Row>
             </Grid>
-            <Divider
-                as='h4'
-                className='header'
-                horizontal
-                style={{ margin: '3em 0em', textTransform: 'uppercase' }}
-            >
-                <a href="#">Get Started Now</a>
-            </Divider>
         </div>
     );
 }

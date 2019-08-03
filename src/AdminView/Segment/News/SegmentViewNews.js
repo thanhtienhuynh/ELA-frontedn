@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import 'antd/dist/antd.css';
 import { List, Avatar, Icon } from 'antd';
 import { Segment } from 'semantic-ui-react'
-import { Button } from 'react-md';
 
 const listData = [];
 for (let i = 0; i < 23; i++) {

@@ -61,7 +61,7 @@ export default class SegmentCreateNews extends Component {
                     <Form.Field value={topic} name="topic" onChange={this.handleChange} required control={Input} label='Topic' placeholder='Topic' style={styleForm} />
                     <Message negative hidden={this.state.displayeMesssageTopic}>Please enter your password!!!</Message>
                     <label style={{ 'fontWeight': '700', 'marginBottom':'0.5em' }}>Content</label>
-                    <Editor value={text} name="text" onChange={this.handleChange} style={{ 'height': '150px', 'marginBottom':'1em' }} value={this.state.text} onTextChange={(e) => this.setState({ text: e.htmlValue })} />
+                    <Editor value={text} name="text" onChange={this.handleChange} style={{ 'height': '150px', 'marginBottom':'1em' }} onTextChange={(e) => this.setState({ text: e.htmlValue })} />
                     <Form.Field positive control={Button}>Create</Form.Field>
                 </Form>
             </Segment>
