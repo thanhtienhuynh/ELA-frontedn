@@ -1,35 +1,11 @@
 import React, {Component} from 'react';
-import {Divider, Grid, Button, Icon} from 'semantic-ui-react'
-import {CSSTransition} from 'react-transition-group'
-import data from './data/data'
-import HomeCourse from './HomeCourse'
+import {Divider} from 'semantic-ui-react'
+import data from './data/data';
+import OwlCarouselBar from './OwlCarouselBar';
 const styleCourse = {'marginTop': '1em', 'marginLeft' : '1em', 'marginRight': '1em'}
-
 class Course extends Component {
-
-    constructor(props){
-        super(props);
-        this.state = {
-          appearHome: true,
-          property: data.properties[0]
-        }
-    }
-
-    nextProperty = () => {
-        const newIndex = this.state.property.index+1;
-        this.setState({
-          property: data.properties[newIndex]
-        })
-    }
-
-    prevProperty = () => {
-        const newIndex = this.state.property.index-1;
-        this.setState({
-          property: data.properties[newIndex]
-        })
-    }
+    state={properties: data.properties};
     render() {
-        const {property} = this.state;
         return (
             <div style={styleCourse}>
                 <Divider
@@ -38,27 +14,9 @@ class Course extends Component {
                 horizontal
                 style={{ margin: '3em 0em', textTransform: 'uppercase' }}
                 >
-                    <a href="#">Course</a>
+                    <a href="homepage/courses">Course</a>
                 </Divider>
-                <Grid>
-                    <Grid.Row>
-                        <Grid.Column width={3} textAlign="center" verticalAlign="middle">
-                            <Button color="youtube" circular size="big" icon="arrow left" disabled={property.index === 0} onClick={() => this.prevProperty()}></Button>
-                        </Grid.Column>
-                        <Grid.Column width={10}>
-                            <CSSTransition
-                                in={true}
-                                appear={true}
-                                timeout={1000}
-                            >
-                                <HomeCourse property={property} />         
-                            </CSSTransition>
-                        </Grid.Column>
-                        <Grid.Column width={3} textAlign="center" verticalAlign="middle">
-                            <Button color="youtube" circular size="big" icon="arrow right" disabled={property.index === data.properties.length-1} onClick={() => this.nextProperty()}></Button>
-                        </Grid.Column>
-                    </Grid.Row>
-                </Grid>
+                <OwlCarouselBar properties={this.state.properties}/>
             </div>
         );
     }

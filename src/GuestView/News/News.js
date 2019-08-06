@@ -9,7 +9,7 @@ const News = () => (
             horizontal
             style={{ margin: '3em 0em', textTransform: 'uppercase' }}
         >
-            <a href="#">News</a>
+            <a href="#1">News</a>
         </Divider>
         <Grid columns={3} divided>
             <Grid.Row stretched>

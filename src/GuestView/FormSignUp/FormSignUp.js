@@ -192,7 +192,7 @@ class FormSignUp extends Component {
             <Grid>
                 <Grid.Column textAlign="center">
                     <Message size="big">
-                        Have an Account already? <a href="#">Log in</a>
+                        Have an Account already? <a href="#1">Log in</a>
                     </Message>
                 </Grid.Column>
             </Grid>

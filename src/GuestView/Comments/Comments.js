@@ -9,7 +9,7 @@ const Comments = () => {
                 horizontal
                 style={{ margin: '3em 0em', textTransform: 'uppercase' }}
             >
-                <a href="#">Parents and Students say about ELA</a>
+                <a href="#1">Parents and Students say about ELA</a>
             </Divider>
             <Grid columns="equal" divided>
                 <Grid.Row stretched>

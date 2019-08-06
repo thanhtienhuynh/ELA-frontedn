@@ -53,7 +53,7 @@ class FormLogin extends Component {
                         onChange={this.handleChange}
                     />
                     <Message negative hidden={this.state.displayMessagePassword}>Please enter your password!!!</Message>
-                    <p style={{'textAlign': 'right'}}><a href="#">Forget Password?</a></p>
+                    <p style={{'textAlign': 'right'}}><a href="#1">Forget Password?</a></p>
                     <Button color="blue" fluid size="large">
                         Login
                     </Button>
@@ -62,7 +62,7 @@ class FormLogin extends Component {
             <Grid>
                 <Grid.Column textAlign="center">
                     <Message size="big">
-                        New to us? <a href="#">Sign Up</a>
+                        New to us? <a href="#1">Sign Up</a>
                     </Message>
                 </Grid.Column>
             </Grid>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import {Divider, Grid, Button} from 'semantic-ui-react';
 import LectureDetail from './LectureDetail/LectureDetail'
 import DimmerImg from './DimmerLectureImage/DimmerLectureImage';
@@ -12,7 +13,7 @@ const Lecture = () => {
                 horizontal
                 style={{ margin: '3em 0em', textTransform: 'uppercase' }}
             >
-                <a href="#">Lectures</a>
+                <a href="homepage/lectures">Lectures</a>
             </Divider>
             <Grid columns="equal" divided>
                 <Grid.Row>
@@ -35,7 +36,7 @@ const Lecture = () => {
             </Grid>
             <Grid >
                 <Grid.Column textAlign="center">
-                    <Button size="big" color="green" style={{'marginTop':'1em'}}>See More</Button>
+                    <Button size="big" color="green" style={{'marginTop':'1em'}} as={Link} to="/homepage/lectures">See More</Button>
                 </Grid.Column>
             </Grid>
         </div>
