@@ -66,7 +66,7 @@ class Header extends React.Component {
                             />
                             <Menu.Item 
                                 as={Link}  
-                                to="/homepage/aboutus" 
+                                to="/homepage/news" 
                                 name='About us'
                                 active={activeItem === 'About us'}
                                 onClick={this.handleItemClick}

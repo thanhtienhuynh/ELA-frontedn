@@ -1,5 +1,6 @@
 import React from 'react'
 import { Grid, Segment, Card, Image, Button, Header, Divider } from 'semantic-ui-react'
+import {Link} from 'react-router-dom'
 
 const News = () => (
     <div>
@@ -138,7 +139,7 @@ const News = () => (
         </Grid>
         <Grid>
             <Grid.Column textAlign="right">
-                <Button content="View more news..." basic color="blue"/>
+                <Button content="View more news..." basic color="blue" as={Link} to="/homepage/news"/>
             </Grid.Column>
         </Grid>
     </div>

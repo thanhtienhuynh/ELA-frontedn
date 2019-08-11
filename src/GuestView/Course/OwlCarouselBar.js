@@ -11,9 +11,12 @@ const OwlCarouselBar = (props) => {
         <OwlCarousel
             className="owl-theme"
             loop
-            items={4}
-            margin={10}
-            nav
+            items={5}
+            margin={15}
+            autoplay={true}
+            autoplayTimeout={2000}
+            autoplayHoverPause={true}
+            dots={false}
         >
             {OwlBar}
         </OwlCarousel>

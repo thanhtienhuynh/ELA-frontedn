@@ -54,7 +54,7 @@ class Header extends React.Component {
                             />
                             <Menu.Item 
                                 as={Link}  
-                                to="/homepage/aboutus" 
+                                to="/homepage/news" 
                                 name='About us'
                             />
                             <Menu.Menu position='right'>

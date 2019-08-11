@@ -10,10 +10,12 @@ const CardCourse = ({property}) => {
                     <Image src={picture} wrapped ui={false} />
                     <Card.Content>
                         <Card.Header textAlign="center">{nameCourse}</Card.Header>
-                        <Card.Meta><Rating icon='star' defaultRating={rating} maxRating={4}/></Card.Meta>
                         <Card.Description>
                             <b>{des}</b>
                         </Card.Description>
+                    </Card.Content>
+                    <Card.Content extra>
+                        <Rating icon='star' defaultRating={rating} maxRating={4}/>
                     </Card.Content>       
                 </Card>
             }>

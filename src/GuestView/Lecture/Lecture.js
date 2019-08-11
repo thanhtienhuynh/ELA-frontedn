@@ -36,7 +36,7 @@ const Lecture = () => {
             </Grid>
             <Grid >
                 <Grid.Column textAlign="center">
-                    <Button size="big" color="green" style={{'marginTop':'1em'}} as={Link} to="/homepage/lectures">See More</Button>
+                    <Button size="big" color="green" style={{'marginTop':'1em'}} as={Link} to="/homepage/lectures">See All Lectures</Button>
                 </Grid.Column>
             </Grid>
         </div>
