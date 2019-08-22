@@ -1,9 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import {Link} from 'react-router-dom';
 import {Divider, Grid, Button} from 'semantic-ui-react';
-import LectureDetail from './LectureDetail/LectureDetail'
-import DimmerImg from './DimmerLectureImage/DimmerLectureImage';
+import OwlCarouselLecture from './OwlCarouselLecture';
+import data from './data/data'
 const styleLecture = {'marginTop': '1em', 'marginLeft' : '1em', 'marginRight': '1em'}
+const properties = data.properties.slice(0, 6);
 const Lecture = () => {
     return (
         <div style={styleLecture}>
@@ -15,28 +16,10 @@ const Lecture = () => {
             >
                 <a href="homepage/lectures">Lectures</a>
             </Divider>
-            <Grid columns="equal" divided>
-                <Grid.Row>
-                    <Grid.Column >
-                        <LectureDetail name="Julietto Markow" country="USA" des="Description 1">
-                            <DimmerImg />
-                        </LectureDetail>
-                    </Grid.Column>
-                    <Grid.Column>
-                        <LectureDetail name="Tran The Tin" country="Viet Nam" des="Description 2">
-                            <DimmerImg />
-                        </LectureDetail>
-                    </Grid.Column>
-                    <Grid.Column>
-                        <LectureDetail name="Karren Legen" country="Philipine" des="Description 3">
-                            <DimmerImg />
-                        </LectureDetail>
-                    </Grid.Column>
-                </Grid.Row>
-            </Grid>
-            <Grid >
-                <Grid.Column textAlign="center">
-                    <Button size="big" color="green" style={{'marginTop':'1em'}} as={Link} to="/homepage/lectures">See All Lectures</Button>
+            <OwlCarouselLecture properties={properties} />
+            <Grid style={{'marginTop':'1em'}}>
+                <Grid.Column textAlign='center'>
+                    <Button primary as={Link} size='big' to="/homepage/lectures">See all lectures</Button>
                 </Grid.Column>
             </Grid>
         </div>

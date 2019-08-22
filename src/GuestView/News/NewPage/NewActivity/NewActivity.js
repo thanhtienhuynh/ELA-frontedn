@@ -40,7 +40,7 @@ class NewActivity extends React.Component {
                 >
                     Activities
                 </Divider>
-                <Grid columns={2} padded>
+                <Grid columns={2} padded stretched>
                     <Grid.Row stretched>
                         <Grid.Column textAlign="center" verticalAlign="middle">
                             <Segment as="a">

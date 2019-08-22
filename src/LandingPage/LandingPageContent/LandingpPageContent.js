@@ -56,7 +56,7 @@ const LandingPageContent = () => {
             >
                 <a href="#1">Course Detail</a>
             </Divider>
-            <Grid columns="3" >
+            <Grid container stackable columns="equal"  >
                 <Grid.Row>
                     <Grid.Column textAlign="center">
                         <Segment>
