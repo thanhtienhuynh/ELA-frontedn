@@ -182,10 +182,31 @@ export default class AccordionExampleInverted extends Component {
 
           <Accordion.Title style={styleMenuItem} active={activeIndex === 8} index={8} onClick={this.handleClick}>
             <Icon name='dropdown' />
-            News
+            Quizes
           </Accordion.Title>
 
           <Accordion.Content active={activeIndex === 8}>
+            <Menu style={{ 'width': '22em' }} inverted vertical>
+              <Menu.Item name='View'
+                active={activeItem === 'view'}
+                onClick={this.handleItemClickOnItem}
+                as={Link} to="/admin/quiz/view"
+              />
+              <Menu.Item
+                name='Create'
+                active={activeItem === 'create'}
+                onClick={this.handleItemClickOnItem}
+                as={Link} to="/admin/quiz/create"
+              />
+            </Menu>
+          </Accordion.Content>
+
+          <Accordion.Title style={styleMenuItem} active={activeIndex === 9} index={9} onClick={this.handleClick}>
+            <Icon name='dropdown' />
+            News
+          </Accordion.Title>
+
+          <Accordion.Content active={activeIndex === 9}>
             <Menu style={{ 'width': '22em' }} inverted vertical>
               <Menu.Item name='View'
                 active={activeItem === 'view'}
@@ -201,12 +222,12 @@ export default class AccordionExampleInverted extends Component {
             </Menu>
           </Accordion.Content>
 
-          <Accordion.Title style={styleMenuItem} active={activeIndex === 9} index={9} onClick={this.handleClick}>
+          <Accordion.Title style={styleMenuItem} active={activeIndex === 10} index={10} onClick={this.handleClick}>
             <Icon name='dropdown' />
             Accounts
           </Accordion.Title>
 
-          <Accordion.Content active={activeIndex === 9}>
+          <Accordion.Content active={activeIndex === 10}>
             <Menu style={{ 'width': '22em' }} inverted vertical>
               <Menu.Item
                 name='View'
