@@ -4,6 +4,7 @@ import NewCourse from './NewCourse/NewCourse'
 import Images from './Images/Images'
 import NewActivity from './NewActivity/NewActivity'
 import Comments from '../../Comments/Comments'
+import Footer from '../../Footer/Footer'
 import ScrollAnimation from 'react-animate-on-scroll';
 import {Embed, Segment, Grid, Divider} from 'semantic-ui-react'
 const NewPage = () => {
@@ -51,6 +52,7 @@ const NewPage = () => {
             <ScrollAnimation animateIn="flipInX">
                 <Comments />
             </ScrollAnimation>
+            <Footer />
         </div>
     );
 }

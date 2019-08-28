@@ -1,7 +1,7 @@
 const data = {
     'properties': [{
             'id': '1',
-            'name': 'Mitchell1',
+            'name': 'Mitc hell1',
             'images': 'https://ihatetomatoes.net/demos/_rw/01-real-estate/tn_property01.jpg',
             'label': ['summit1', 'top notch 3'],
             'country': 'phillipine',
@@ -9,7 +9,7 @@ const data = {
         },
         {
             'id': '2',
-            'name': 'Mitchell2',
+            'name': 'Mit chell2',
             'images': 'https://ihatetomatoes.net/demos/_rw/01-real-estate/tn_property01.jpg',
             'label': ['summit1', 'top notch 3'],
             'country': 'phillipine',
@@ -17,7 +17,7 @@ const data = {
         },
         {
             'id': '3',
-            'name': 'Mitchell3',
+            'name': 'M itchell3',
             'images': 'https://ihatetomatoes.net/demos/_rw/01-real-estate/tn_property01.jpg',
             'label': ['summit1', 'top notch 3'],
             'country': 'phillipine',
